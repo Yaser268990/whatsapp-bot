@@ -62,6 +62,235 @@
             "description": "Message send while kicking.",
             "required": false,
             "value": "OK bie"
+      
+        },
+        "BGM_FILTER": {
+            "description": "If you likes bgm you can write 'true'. Otherwise false",
+            "required": false,
+            "value": "true"
+        },
+        "OWNER_NAME": {
+            "description": "Fill your name in here. it will show your name in .owner command reply",
+            "required": true,
+            "value": "YASER💫"
+        },
+        "AUTO_STICKER": {
+            "description": "If you likes bgm you can write 'true'. Otherwise false",
+            "required": false,
+            "value": "true"
+        },        
+        "V_HEADER": {
+            "description": "Set the Header name logo",
+            "required": true,
+            "value": "YOUR HEADER HERE"
+        },
+        "VERIFIED": {
+            "description": "Give with number jid",
+            "required": true,
+            "value": "0@s.whatsapp.net"
+        
+        },
+        "DIALOGUE": {
+            "description": "set the Dialouge",
+            "required": true,
+            "value": "What's BOT Menu🔥"
+        },
+        "INBO_BLOCK": {
+            "description": "Inbox Blocking System. True koduthal ningalude pml vann chila bad words upoayogikunnavare bot block aakum block aakendengil false kodukuka",
+            "required": true,
+            "value": "false"
+        },
+        "WELCOME": {
+            "description": "You can select welcome as gif/pp",
+            "required": false,
+            "value": "pp"
+
+        },
+        "LOGO_NAME": {
+            "description": "Set the logo list name",
+            "required": true,
+            "value": "Bixby Mowl"
+        },
+        "WEL_GIF": {
+            "description": "Fill here any gif link if you selected gif as WEELCOME",
+            "required": false,
+            "value": "false"
+        },
+        "BYE_GIF": {
+            "description": "Fill here any gif link if you selected gif as WEELCOME",
+            "required": false,
+            "value": "false"
+        },
+        "TAG_REPLY": {
+            "description": "Enter jid of your number so that you get a audio reply when metioned example - 91xxxxxxxxxx@s.whatsapp.net - for india",
+            "required": false
+
+        },
+        "ANTİ_LİNK": {
+            "description": "Link Blocking System.",
+            "required": true,
+            "value": "false"
+        },
+        "CMD_LIST": {
+            "description": "You can change Command list emojis like: help/❤️/😅/🍃/💌.)",
+            "required": true,
+            "value": "YASER BOT/🎗️/💝/✨/📝"
+        },
+        "BGM_DURATION": {
+            "description": "FUNY BGM DURATION  codded by YASER",
+            "required": false,
+            "value": "39999600"
+        },
+        "AUTO_BİO": {
+            "description": " Set true for auto date, time in biography.",
+            "required": true,
+            "value": "false"
+        },
+        "BAD_WORDS": {
+            "description": "enter the word you dont allow in your group ",
+            "required": true,
+            "value": "false"
+        },
+        "HANDLERS": {
+            "description": "For commands.",
+            "required": true,
+            "value": "^[.!;]"
+        },
+        "CHAT_BOT": {
+            "description": "Hesabınızı bir Chatbot'a Çevirin! Turn your account into a chatbot!",
+            "required": true,
+            "value": "false"
+        },
+        "NO_LOG": {
+            "description": " Set true if you don't want to see error log.",
+            "required": true,
+            "value": "false"
+        },
+        "SEND_READ": {
+            "description": "Write true if you want to throw seen.",
+            "required": true,
+            "value": "true"
+
+        },
+        "MUTE_MESSAGE": {
+            "description": "Customizable Mute Message! Use => default, to change back.",
+            "required": false,
+            "value": "default"
+        },
+        "TAG_HEADER": {
+            "description": "Heading when taging all",
+            "required": false,
+            "value": "*YASER BOT*"
+        },
+        "BLOCK_CHAT": {
+            "description": "Choose in which chat the bot won't work there. Ex: 905xxxx && 905xxxx-1xxx or 905xxxx,905xxx...",
+            "required": false,
+            "value": "false"
+        },
+        "UNMUTE_MESSAGE": {
+            "description": "Customizable Unmute Message! Use => default, to change back.",
+            "required": false,
+            "value": "default"
+        },
+        "BLOCK_MESSAGE": {
+            "description": "Customizable Block Message! Use => default, to change back.",
+            "required": false,
+            "value": "default"
+        },
+        "UNBLOCK_MESSAGE": {
+            "description": "Customizable Unblock Message! Use => default, to change back.",
+            "required": false,
+            "value": "default"
+        },
+        "NUMBER": {
+            "description": "Enter the owner number, You must enter your number, Please don't enter the number with country code ( example : 91 for indian ) Also don't enter space & + on the number ( example : 91996132xxxx for indian ). ( This number will be shown on some commands )",
+            "required": false,
+            "value": "919446072492"
+        },
+        "DEPLOYER": {
+            "description": "enter your name here",
+            "required": false,
+            "value": "YASER"
+        },
+        "BOT_NAME": {
+            "description": "heading for .list command reply",
+            "required": false,
+            "value": "•━━━━╼⤏YASER BOT⤎╾━━━•"
+        },
+        "WORK_TYPE": {
+            "description": "bot Working Type. If you use “public”, everyone can use the bot. Else if you use “private”, only you can use your bot.",
+            "required": true,
+            "value": "public"
+
+        },
+        "DEBUG": {
+            "description": "Debugging",
+            "required": true,
+            "value": "false"
+        },
+        "REMOVE_BG_API_KEY": {
+            "description": "https://remove.bg",
+            "required": false
+        },
+        "ALIVE_MESSAGE": {
+            "description": "Customizable Alive Message! use {pp} if you want to add profile picture also add {qt} if you want to add qoutes in your welcome message",
+            "required": false,
+            "value": "i am alive  \n\n ```coded by YASER```\n\n```{qt}```"
+        },
+        "ALIVE_TWO": {
+            "description": "Set the alive message two name",
+            "required": true,
+            "value": "HEY"
+        },
+        "BIXBY_ALIVE": {
+            "description": "Set the Alive message first name",
+            "required": true,
+            "value": "HELLO"
+        },
+        "BAN_MESSAGE": {
+            "description": "Customizable Ban Message! Use => default, to change back.",
+            "required": false,
+            "value": "default"
+        },
+        "SONGD": {
+            "description": "Customizable song DOWNLOADING message instead of 'Dowloading your song'",
+            "required": true,
+            "value": "*Downloading your song*"
+        },
+        "SONGU": {
+            "description": "Customizable song UPLOADING message instead of 'Uploading your song'",
+            "required": true,
+            "value": "*Feel the song*"
+        },
+        "ADD_MESSAGE": {
+            "description": "Customizable Add Message! Use => default, to change back.",
+            "required": false,
+            "value": "default"
+        },
+        "KICKME_MESSAGE": {
+            "description": "Customizable Kickme Message! Use => default, to change back.",
+            "required": false,
+            "value": "default"
+        },
+        "PROMOTE_MESSAGE": {
+            "description": "Customizable Promote Message! Use => default, to change back.",
+            "required": false,
+            "value": "default"
+        },
+        "DEMOTE_MESSAGE": {
+            "description": "Customizable Demote Message! Use => default, to change back.",
+            "required": false,
+            "value": "default"
+        },
+        "AFK_MESSAGE": {
+            "description": "Customizable AFK Message! Use => default, to change back.",
+            "required": false,
+            "value": "default"
+        },
+        "NO_ONLINE": {
+            "description": "Çevrimiçi görünmek istemiyorsanız true yazın. Type true if you don't want to appear online.",
+            "required": false,
+            "value": "true"
         },
         "REMOVEBG_KEY": {
             "description": "key from remove.bg",
@@ -74,7 +303,7 @@
         },
         "STICKER_PACKNAME": {
             "description": "Sticker pack name,author",
-            "value": "🥰,lyfe00011"
+            "value": "🥰,YASER BOT"
         },
         "DISABLE_BOT": {
             "description": "Disable or Block bot in group/chat.Enter required chat jid separated by ,",
