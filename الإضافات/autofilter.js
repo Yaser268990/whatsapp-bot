@@ -17,7 +17,7 @@ const Config = require('../config');
 
 if (Config.WORKTYPE == 'private') {
 
-Bixby.addCommand({pattern: 'ziyan', fromMe: true, deleteCommand: true, desc: GM,}, (async (message, match) => {
+Bixby.addCommand({pattern: 'YASER', fromMe: true, deleteCommand: true, desc: GM,}, (async (message, match) => {
 
     var r_text = new Array ();
 
@@ -49,7 +49,7 @@ Bixby.addCommand({pattern: 'midilaj', fromMe: true, deleteCommand: true, desc: G
 
     if (Config.WORKTYPE == 'public') {
 
-        Bixby.addCommand({pattern: 'ziyan', fromMe: false, deleteCommand: true, desc: GM,}, (async (message, match) => {
+        Bixby.addCommand({pattern: 'YASER', fromMe: false, deleteCommand: true, desc: GM,}, (async (message, match) => {
 
             var r_text = new Array ();
 
@@ -77,7 +77,7 @@ Bixby.addCommand({pattern: 'midilaj', fromMe: true, deleteCommand: true, desc: G
 
                 }));    
 
-                Bixby.addCommand({pattern: 'bixby', fromMe: true, deleteCommand: true,dontAddCommandList: true }, (async (message, match) => {
+                Bixby.addCommand({pattern: 'Bot', fromMe: true, deleteCommand: true,dontAddCommandList: true }, (async (message, match) => {
 
                     var r_text = new Array ();
 
