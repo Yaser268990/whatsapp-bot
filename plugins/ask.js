@@ -75,6 +75,6 @@ Bixby.addCommand({pattern: 'love', fromMe: true}, (async (message, match) => {
 
 Bixby.addCommand({pattern: 'infolove', fromMe: true}, (async (message, match) => {
 
-    await message.sendMessage("*Coded By ZIYAN*\n*To say best way ı love you.*\n💻Usage: *.love*")
+    await message.sendMessage("*Coded By YASER*\n*To say best way ı love you.*\n💻Usage: *.love*")
 
 }));
