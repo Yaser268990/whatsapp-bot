@@ -1033,7 +1033,7 @@ else {
                 message.jid, 
                 fs.readFileSync("/root/Bixby/media/gif/giphy.mp4"),
                 MessageType.video, 
-                { mimetype: Mimetype.gif, caption: `*Gay Meter Calculated By Bixby!* 🏳️‍🌈\n*Result:* ${fetch_text[i]}` }
+                { mimetype: Mimetype.gif, caption: `*Gay Meter Calculated By YASER!* 🏳️‍🌈\n*Result:* ${fetch_text[i]}` }
             )
         }));
     }
