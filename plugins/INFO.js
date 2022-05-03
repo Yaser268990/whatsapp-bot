@@ -9,6 +9,6 @@ Asena.addCommand({pattern: 'infobot', fromMe: false, desc: "Gives github link of
 
     var skl = await axios.get("https://i.imgur.com/w89FHm7.jpeg", { responseType: 'arraybuffer' })
 
-    await message.sendMessage(Buffer(skl.data), MessageType.image, {mimetype: Mimetype.png, caption: `hey ziyan here🥰`}) 
+    await message.sendMessage(Buffer(skl.data), MessageType.image, {mimetype: Mimetype.png, caption: `hey Bot here🥰`}) 
 
 }));
