@@ -28,7 +28,7 @@ Bixby.addCommand({pattern: 'audio command', fromMe: false, desc: 'send all bgm c
    ` + config.LOGO_NAME + `
 
 ★✰✯★✰✯★✰✯★✰✯★✰✯★✰✯★
-BIXBY MOWL 𝐁𝐆𝐌 𝐂𝐎𝐌𝐌𝐀𝐍𝐃𝐒
+YASER BOT 𝐁𝐆𝐌 𝐂𝐎𝐌𝐌𝐀𝐍𝐃𝐒
 ★✰✯★✰✯★✰✯★✰✯★✰✯★✰✯★
 
 
@@ -451,7 +451,7 @@ BIXBY MOWL 𝐁𝐆𝐌 𝐂𝐎𝐌𝐌𝐀𝐍𝐃𝐒
 ➪➪➪➪➪➪➪➪➪➪➪➪➪➪➪➪➪➪➪
 
 ➪➪➪➪➪➪➪➪➪➪➪➪➪➪
-©BIXBY MOWL
+©YASER BOT
 ➪➪➪➪➪➪➪➪➪➪➪➪➪➪
 `}) 
 
