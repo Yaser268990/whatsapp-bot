@@ -35,7 +35,7 @@ Asena.addCommand({pattern: 'clist', fromMe: false, desc: 'command help menu'}, (
 
 🎗️ .adan 
 💖 يجد لك وقت الصلاة._ 
-💬 Eg:- : .prayer <المدينة>
+💬 مثال:- : .prayer <المدينة>
 
 🎗️ .rename 
 💖 اعادة تسميه شيء[object Object]_ 
@@ -75,183 +75,184 @@ Asena.addCommand({pattern: 'clist', fromMe: false, desc: 'command help menu'}, (
 🎗️ .fatp
 
 🎗️ .ttp 
-💖 Converts text to plain painting._ 
+💖 يحول النص إلى رسم عادي._ 
 
 🎗️ .attp 
-💖 Adds rainbow effect to the text as a sticker._ 
+💖 يضيف تأثير قوس قزح إلى النص كملصق._ 
 
 🎗️ .bob 
-💖 Make text on sponge bob's board_ 
+💖 قم بعمل نص على سبونج بوب بورد_
 
 🎗️ .slot 
-💖 Mini game for you_ 
+💖 لعبه خفيفه لك_ 
 
 🎗️ .gura 
-💖 Create gawr gura text_ 
+💖 انشاء نص عملاق_ 
 
 🎗️ .harta 
-💖 Create random texts_ 
+💖 انشاء نصوص عشوائيه_ 
 
 🎗️ .rip 
-💖 Please provide an image link for the effect to be applied (Apply death effect)_ 
+💖 يرجى تقديم رابط صورة للتأثير المراد تطبيقه (تطبيق تأثير الموت)_ 
 
 🎗️ .qrcode 
-💖 Create random texts_ 
+💖 إنشاء نصوص عشوائية_ 
 
 🎗️ .nulis 
-💖 Create random texts_ 
+💖 إنشاء نصوص عشوائية_ 
 
 🎗️ .sand 
-💖 Create random texts_ 
+💖 إنشاء نصوص عشوائية_ 
 
 💝 .bgm 
-💖 turn on and turn off bgm. -bot owner command_ 
-💬 Eg:- : .bgm on / off
+💖 قم بتشغيل وإيقاف تشغيل bgm. -امر مالك البوت_ 
+💬 مثال:- : .bgm on / off
 
 🎗️ .carbon
-💖 It sends carbon picture_ 
+💖 يرسل صورة الكربون 
 
 🎗️ .warn
-💖 warning message_ 
+💖 رسالة تحذير 
 
 🎗️ .bgm 
-💖 change reply message BGM mode_ 
-💬 Eg:- : .bgm one / two
+💖 اعادة الرد BGM mode_ 
+💬 مثال:- : .bgm one / two
 
 🎗️ .git 
-💖 owner number_ 
+💖 رقم المالك_ 
 
 🎗️ .mp3
-💖 Converts video to sound._ 
+💖 يحول الفيديو إلى صوت._ 
 
 🎗️ .photo
-💖 Converts the sticker to a photo._ 
+💖 يحول الملصق إلى صورة._ 
 
 🎗️ .mp4
-💖 Converts animated stickers to video._ 
+💖 يحول الملصقات المتحركة إلى فيديو._ 
 
 🎗️ .doc 
-💖 CONVERT TO DOCUMENT AND ADD GIVEN NAME_ 
-💬 Eg:- :.doc pinky *replace pinky with desired name*
+💖 تحويل إلى المستند وإضافة اسم المعطى_ 
+💬 مثال:- :.doc pinky *استبدال الخنصر بالاسم المطلوب*
 
 🎗️ .dict 
-💖 Use it as a dictionary.
-Eg: .dict en_US;lead
- For supporting languages send *.lngcode*
+💖 استخدمه كقاموس.
+مثال: .dict en_US;lead
+ لدعم اللغات ترسل *.lngcode*
 
 🎗️ .meme 
-💖 Photo memes you replied to.
+💖 صور الميمز التي قمت بالرد عليها.
 
 🎗️ .welcome
-💖 It sets the welcome message. If you leave it blank it shows the welcome message._ 
+💖 يحدد رسالة الترحيب. إذا تركته فارغًا ، فستظهر رسالة الترحيب الافتراضيه._ 
 
 🎗️ .goodbye
-💖 Sets the goodbye message. If you leave blank, it show's the goodbye message._ 
+💖 يضبط رسالة الوداع. إذا تركت فارغة ، فإنها تظهر رسالة الوداع._ 
 
 🎗️ .antilink 
-💖 Activates the Antilink tool._ 
-💬 Eg:- : .antilink on / off
+💖 ينشط اداة Antilink (منع الروابط)._ 
+💬 مثال:- : .antilink on / off
 
 🎗️ .mediafire 
 
 🎗️ .moretxt
-🍒 more txtit commands_ 
+🍒 المزيد من أوامر النص_ 
 
 🎗️ .ffire 
-💖 add your text to random freefire logo_ 
+💖 أضف النص الخاص بك إلى شعار فري فاير عشوائي_ 
 
 🎗️ .emo 
-💖 emogi to png_ 
+💖 يحول ايموجي الى صورة_ 
 
 🎗️ .notes
-💖 Shows all your existing notes._ 
+💖 يظهر كل ما تبذلونه من الملاحظات الموجودة._ 
 
 🎗️ .save 
-💖 Reply a message and type .save or just use .save <Your note> without replying_ 
+💖 الرد على الرسالة واكتب .save أو مجرد استخدام .save <ملاحضتك>  _ 
 
 🎗️ .deleteNotes
-💖 Deletes *all* your saved notes.
+💖 يحذف * كل * ملاحظاتك المحفوظة.
 
 🎗️ .owner
-💖 shows the detail of bot owner
+💖 يوضح تفاصيل مالك البوت
 
 🎗️ .jid 
-💖 Giving user's JID.
+💖 اعطاء المستخدم JID.
 
 🎗️ .random 
-💖 word image_ 
+💖 صورة كلمة_ 
 
 🎗️ .brdmore 
-💖 add readmore before your text
+💖 اظافة readmore  قبل النص الخاص بك
 
 🎗️ .rdmore 
-💖 add readmore before your text
+💖 اظافة readmore  قبل النص الخاص بك
 
 🎗️ .removebg 
-💖 Removes the background of the photos._ 
+💖 يزيل خلفية الصور (قد لايعمل)._ 
 
 🎗️ .report 
-💖 Sends reports to group admins._ 
+💖 يرسل التقارير إلى مسؤولي المجموعة._ 
 
 🎗️ .get 
 
 🎗️ .scan 
-💖 Checks whether the entered number is registered on WhatApp._ 
+💖 للتحقق مما إذا كان الرقم المدخل مسجلاً على WhatApp._ 
 
 🎗️ .trt
-💖 It translates with Google Translate. You must reply any message._ 
-💬 Eg:- : .trt tr it (From Turkish to Italian)
+💖 يقوم بترجمة اي نص بواسطة Google Translate. يجب عليك الرد على الرسالة._ 
+💬 مثال:- : .trt en ar (من Einglish الى Arabic)
 
 🎗️ .detectlang
-💖 Guess the language of the replied message._ 
+💖 يخمن لغة الرسالة التي تم الرد عليها._ 
 
 🎗️ .currency
 
 🎗️ .tts 
-💖 It converts text to sound._ 
+💖 يحول النص إلى صوت._ 
 
 🎗️ .song 
-💖 Uploads the song you wrote._ 
+💖 يقوم بتحميل الأغنية التي كتبتها._
+
 
 🎗️ .video 
-💖 Downloads video from YouTube._ 
+💖 تحميل الفيديو من يوتيوب._ 
 
 🎗️ .sing 
-💖 It sings song that you have written_ 
+💖 تغني الأغنية التي كتبتها_ 
 
 🎗️ .song 
-💖 Uploads the song you wrote for ios users._ 
+💖 يقوم بتحميل الأغنية التي كتبتها لمستخدمي ios._ 
 
 🎗️ .wiki 
-💖 Searches query on Wikipedia._ 
+💖 استعلام البحث في ويكيبيديا._ 
 
 🎗️ .img 
-💖 Searches for related pics on Google._ 
+💖 عمليات البحث عن الصور ذات الصلة على Google._ 
 
 🎗️ .github 
-💖 Collects github information from the given username.
-⌨️ Example: .github phaticusthiccy_ 
+💖 يجمع معلومات github من اسم المستخدم المحدد.
+⌨️ مثال: .github Yaser28990_ 
  
 🎗️ .lyric 
-💖 Finds the lyrics of the song._ 
+💖 يبحث عن كلمات الأغنية._ 
 
 🎗️ .covid 
-💖 Shows the daily and overall covid table of more than 15 countries._ 
+💖 يظهر جدول فيروس كرونا ويشمل اكثر من 15 دولة._ 
 
 🎗️ .sweather 
-💖 Gives you the weekly interpretations of space weather observations provided by the Space Weather Research Center (SWRC) for a p._ 
+💖 يمنحك التفسيرات الأسبوعية لرصدات طقس الفضاء التي يقدمها مركز أبحاث طقس الفضاء (SWRC) للحصول على صفحة._ 
 
 🎗️ .compliment 
-💖 It sends complimentry sentenses_ 
+💖 يرسل مجاملة الأحكام_ 
 
 🎗️ .hmod 
-💖 Finds mod apps from happymod_ 
+💖 يبحث عن تطبيقات مهكره (مستخدمين الاندرويد)_ 
 
 🎗️ .insult 
-💖 It sends insulted words_ 
+💖 يرسل كلمات مهينة_ 
 
 🎗️ .movie 
-💖 Shows movie info._ 
+💖 يظهر معلومات الفيلم._ 
 
 🎗️ .joke 
 💖 It sends random jokes_ 
@@ -260,144 +261,144 @@ Eg: .dict en_US;lead
 💖 roll dise 
 
 🎗️ .owner
-💖 shows the detail of bot owner_ 
+💖 يوضح تفاصيل مالك البوت_ 
 
 🎗️ .quote 
-💖 It shares famous quotes_ 
+💖 انها تشترك في الاقتباسات الشهيرة_ 
 
 🎗️ .ss 
-💖 Takes a screenshot from the page in the given link._ 
+💖 يأخذ لقطة شاشة من الصفحة في الرابط المحدد._ 
 
 🎗️ .setvar
-💖 It send setvars of bot 
+💖 ترسل مجموعة من الروبوتات 
 
 🎗️ .encrpt 
-💖 Text encryption using base64._ 
-💬 Eg:- : .b64en <text>
+💖 تشفير النص باستخدام base64._ 
+💬 مثال:- : .b64en <النص>
 
 🎗️ .show 
-💖 Get info related to tv series and shows_ 
+💖 احصل على معلومات متعلقة بالمسلسلات والبرامج التلفزيونية_ 
 
 🎗️ .ig 
-💖 Fetches user informations from instagram_ 
+💖 يجلب معلومات المستخدم من instagram_ 
 
 🎗️ .animesay 
-💖 It writes the text inside the banner the anime girl is holding_ 
+💖 يكتب النص داخل اللافتة التي تحملها فتاة الأنمي_ 
 
 🎗️ .changesay 
-💖 Turns the text into the change my mind poster._ 
+💖 يحول النص إلى ملصق تغيير رأيي._ 
 
 🎗️ .trumpsay 
-💖 Converts the text to Trump's tweet._ 
+💖 يحول النص إلى تغريدة ترامب._ 
 
 🎗️ .pdf 
-💖 Converts a Site into PDF_ 
+💖 يحول الى PDF_ 
 
 🎗️ .bgm 
-💖 turn on and turn off bgm. -bot owner command_ 
-💬 Eg:- : .bgm on / off
+💖 قم بتشغيل وإيقاف تشغيل bgm. - أمر مالك الروبوت_ 
+💬 مثال:- : .bgm on / off
 
 🎗️ .autosticker 
-💖 turn on and turn off bgm. -bot owner command_ 
-💬 Eg:- : .sticker on / off
+💖 قم بتشغيل وإيقاف تشغيل bgm. - أمر مالك الروبوت_ 
+💬 مثال:- : .sticker on / off
 
 🎗️ .sudo 
-💖 changes sudo numbers_ 
-💬 Eg:- : .sudo *your number*
+💖 يعطي جميع صلاحيات البوت_ 
+💬 مثال:- : .sudo *your number*
 
 🎗️ .caption 
-💖 changes all captions_ 
-💬 Eg:- : .caption *Made by Miss Helena*
+💖 يغير كل التسميات التوضيحية_ 
+💬 مثال:- : .caption *Made by Yaser*
 
 🎗️ .number 
-💖 change user number_ 
-💬 Eg:- : .number *Made by Helena*
+💖 تغيير رقم المستخدم_ 
+💬 مثال:- : .number *Made by Yaser*
 
 🎗️ .deployer 
-💖 change user name_ 
-💬 Eg:- : .deployer *Made by Helena*
+💖 غير اسم المستخدم_ 
+💬 مثال:- : .deployer *Made by Yaser*
 
 🎗️ .handlers 
-💖 changes handlers_ 
-💬 Eg:- : .handler ^[.!] 
+💖 معالجات التغييرات (بادئة الاوامر)_ 
+💬 مثال:- : .handler ^[.!] 
 
 🎗️ .botname 
-💖 change your bot name_ 
-💬 Eg:- : .botname *name* 
+💖 تغيير اسم الروبوت الخاص بك_ 
+💬 مثال:- : .botname *الاسم* 
 
 🎗️ .theri  
-💖 change your theri commands_ 
-💬 Eg:- : .theri command,command
+💖 تغيير أوامرك_ 
+💬 مثال:- : .theri command,command
 
 🎗️ .sticker
-💖 It converts your replied photo or video to sticker._ 
+💖 يقوم بتحويل الصورة أو الفيديو الذي تم الرد عليه إلى ملصق._ 
 
 🎗️ .ffpack
-💖 Free Fire logo maker_ 
+💖 صانع شعار فري فاير_ 
 
 🎗️ .ffpack
-💖 Free Fire logo maker_ 
+💖صانع شعار فري فاير_ 
 
 🎗️ .alive
-💖 Does bot work?_ 
+💖 هل يعمل البوت?_ 
 
 🎗️ .sysd
-💖 Shows the system properties._ 
+💖 يظهر خصائص النظام._ 
 
 🎗️ .tagadmin
-💖 Tags group admins._ 
+💖 منشن لكل مشرفين المجموعة._ 
 
 🎗️ .txtit
-💖 Shows text to image tools with unlimited access._ 
+💖 يعرض أدوات النص إلى الصور مع وصول غير محدود._ 
 
 🎗️ .antibadword 
-💖 turn on & off anti-badword To remove members when they use bad words_ 
-💬 Eg:- : .antibadword on / off
+💖 تشغيل وإيقاف تشغيل مكافحة الكلمات السيئة لإزالة الأعضاء عند استخدامهم للكلمات السيئة_ 
+💬 مثال:- : .antibadword on / off
 
 🎗️ .a 
-💖 Converts audio to sound recording._ 
+💖 يحول المقطع الصوتي الى تسجيل صوتي._ 
 
 🎗️ .unvoice
-💖 Converts audio to sound recording._ 
+💖 يحول المقطع الصوتي الى تسجيل صوتي._ 
 
 🎗️ .update
-💖 Checks the update._ 
+💖 يتحقق من التحديثات._ 
 
 🎗️ .update now
-💖 It makes updates._ 
+💖 يقوم بإجراء التحديثات._ 
 
 🎗️ .wallpaper
-💖 It sends high resolution wallpapers._ 
+💖 يرسل خلفيات عالية الدقة._ 
 
 🎗️ .wame 
-💖 Get a link to the user chat._ 
+💖 احصل على رابط دردشة المستخدم._ 
 
 🎗️ .rwarn
-💖 Warning message 0_ 
+💖 رسالة تحذير 0_ 
 
 🎗️ .weather 
-💖 Shows the weather._ 
+💖 يظهر الطقس._ 
 
 🎗️ .speedtest
-💖 Measures Download and Upload speed._ 
+💖 يقيس سرعة التنزيل والتحميل._ 
 
 🎗️ .ping
-💖 Measures your ping._ 
+💖 يقيس ping الخاص بك._ 
 
 🎗️ .short 
-💖 Shorten the long link._ 
+💖 يختصر الروابط الطويله._ 
 
 🎗️ .calc 
-💖 Performs simple math operations._ 
+💖 ينفذ عمليات حسابية بسيطة._ 
 
 🎗️ .sendi
-💖 Download status from wa_ 
+💖 تحميل الحاله من الواتس اب_ 
 
 🎗️ .sendv
-💖 Download status from wa_ 
+💖 تنزيل الحاله من الواتس اب_ 
 
 🎗️ .whois
-💖 Displays metadata data of group or person._ 
+💖 يعرض بيانات التعريف الخاصة بالمجموعة أو الشخص._ 
 `}) 
 
 }));
