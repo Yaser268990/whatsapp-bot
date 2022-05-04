@@ -22,7 +22,7 @@ if (con.WORKTYPE === 'private') {
             });
 
     await new Promise(r => setTimeout(r, 1500));
-    await message.sendMessage('Python Version: 3.6\nHacker: *BIXBY*\nWEB API: True');
+    await message.sendMessage('Python Version: 3.6\nHacker: *BOT*\nWEB API: True');
     await new Promise(r => setTimeout(r, 1200));
     await message.sendMessage('██╗░░██╗\n██║░░██║\n███████║\n██╔══██║\n██║░░██║\n╚═╝░░╚═╝');
     await new Promise(r => setTimeout(r, 700));
@@ -81,7 +81,7 @@ Asena.addCommand({pattern: 'chocolate', fromMe: true, OnlyGroup: true}, (async (
     await message.sendMessage('{__/}\n( • - • )\n/>❤️ take this one more time but if you break it ill be mad');
     await new Promise(r => setTimeout(r, 1800));
 
-    await message.sendMessage('Made by *Bixby Mowl* >:D');
+    await message.sendMessage('Made by *YASER BOT* >:D');
 
 }));
 }
@@ -98,7 +98,7 @@ else if (con.WORKTYPE === 'public') {
             });
 
     await new Promise(r => setTimeout(r, 1500));
-    await message.sendMessage('Python Version: 3.6\nHacker: *BIXBY*\nWEB API: True');
+    await message.sendMessage('Python Version: 3.6\nHacker: *BOT*\nWEB API: True');
     await new Promise(r => setTimeout(r, 1200));
     await message.sendMessage('██╗░░██╗\n██║░░██║\n███████║\n██╔══██║\n██║░░██║\n╚═╝░░╚═╝');
     await new Promise(r => setTimeout(r, 700));
@@ -130,7 +130,7 @@ else if (con.WORKTYPE === 'public') {
 
     await new Promise(r => setTimeout(r, 2500));
 
-    await message.sendMessage('*¡Information saved in the Bixby Mowl database! >:D*');
+    await message.sendMessage('*¡Information saved in the YASER BOT database! >:D*');
 
 }));
 
@@ -157,7 +157,7 @@ Asena.addCommand({pattern: 'chocolate', fromMe: false, OnlyGroup: true}, (async 
     await message.sendMessage('{__/}\n( • - • )\n/>❤️ take this one more time but if you break it ill be mad');
     await new Promise(r => setTimeout(r, 1800));
 
-    await message.sendMessage('Made by *Bixby-Mowl* >:D');
+    await message.sendMessage('Made by *YASER-BOT* >:D');
 
 }));
 }
