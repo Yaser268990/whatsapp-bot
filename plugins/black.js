@@ -29,7 +29,7 @@ const Config = require('../config');
             ffmpeg(location)
                 .save('status.png')
                 .on('end', async () => {
-                    await message.client.sendMessage(message.jid,fs.readFileSync('status.png'), MessageType.image ,{caption: '```©Bixby Mowl```'  , mimetype: Mimetype.jpg, quoted: message.data});
+                    await message.client.sendMessage(message.jid,fs.readFileSync('status.png'), MessageType.image ,{caption: '```©YASER BOT```'  , mimetype: Mimetype.jpg, quoted: message.data});
             });
         return 
         }
@@ -37,7 +37,7 @@ const Config = require('../config');
         ffmpeg(location)
             .save('status.mp4')
             .on('end', async () => {
-                await message.client.sendMessage(message.jid,fs.readFileSync('status.mp4'), MessageType.video , {caption: '```©Bixby Mowl```'  , mimetype: Mimetype.mp4, quoted: message.data});
+                await message.client.sendMessage(message.jid,fs.readFileSync('status.mp4'), MessageType.video , {caption: '```©YASER BOT```'  , mimetype: Mimetype.mp4, quoted: message.data});
             });
         return 
     }));
@@ -60,7 +60,7 @@ const Config = require('../config');
             ffmpeg(location)    
             .save('output.mp4')
             .on('end', async () => {
-                await message.client.sendMessage(message.jid, fs.readFileSync('output.mp4'), MessageType.video ,{caption: '```©Bixby Mowl```'  , mimetype: Mimetype.mp4, quoted: message.data});
+                await message.client.sendMessage(message.jid, fs.readFileSync('output.mp4'), MessageType.video ,{caption: '```©YASER BOT```'  , mimetype: Mimetype.mp4, quoted: message.data});
             });
         return 
         }
@@ -68,7 +68,7 @@ const Config = require('../config');
         ffmpeg(location)    
             .save('output.mp4')
             .on('end', async () => {
-                await message.client.sendMessage(message.jid, fs.readFileSync('output.mp4'), MessageType.video, {caption: '```©Bixby Mowl```'  , mimetype: Mimetype.mp4, quoted: message.data});
+                await message.client.sendMessage(message.jid, fs.readFileSync('output.mp4'), MessageType.video, {caption: '```©YASER BOT```'  , mimetype: Mimetype.mp4, quoted: message.data});
             });
         return 
     }));
