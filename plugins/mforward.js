@@ -20,7 +20,7 @@ else mode = 'ғᴏʀᴡᴀʀᴅᴇᴅ ʙʏ ' + Config.BC
 
             const ziyan = {
 
-                  key: {"fromMe": false,"participant": "0@s.whatsapp.net","remoteJid": "0@s.whatsapp.net"},"message": {"groupInviteMessage": {"groupJid": "120363041454304530@g.us","inviteCode": "mememteeeekkeke","groupName": "Bixby Mowl", "caption": mode , 'jpegThumbnail': fs.readFileSync('./media/photo/bixby8.png')}}
+                  key: {"fromMe": false,"participant": "0@s.whatsapp.net","remoteJid": "0@s.whatsapp.net"},"message": {"groupInviteMessage": {"groupJid": "120363041454304530@g.us","inviteCode": "mememteeeekkeke","groupName": "YASER BOT", "caption": mode , 'jpegThumbnail': fs.readFileSync('./media/photo/bixby8.png')}}
              
              
             } /*Change image path if and group jid also change group name and caption with your bot name only need if you are editing this plugin re edited and modified by ziyan */
