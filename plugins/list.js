@@ -22,53 +22,53 @@ Asena.addCommand({pattern: 'clist', fromMe: false, desc: 'command help menu'}, (
    ` + config.LOGO_NAME + `
  
 🎗️ .xmedia
-💖 It is a plugin with more than 25 media tools._ 
+💖 اكتب هاذا الامر لارسال اوامر التنزيل._ 
 
 🎗️ .audio command
-💖 Bot send all bgm commands 
+💖 يرسل البوت جميع اوامر ال bmg 
 
 🎗️ .ownercmnd
-💖 set of commands for bot user or sudo_
+💖 اوامر المشرفين على البوت فقط
 
 🎗️ .codtts
-💖 language code to change the voice in .tts & also for .trt translation_ 
+💖 تغير لغة المقطع الصوتي .tts & ايضا ل .trt الترجمة_ 
 
 🎗️ .adan 
-💖 Finds prayer time._ 
-💬 Eg:- : .prayer <city>
+💖 يجد لك وقت الصلاة._ 
+💬 Eg:- : .prayer <المدينة>
 
 🎗️ .rename 
-💖 [object Object]_ 
+💖 اعادة تسميه شيء[object Object]_ 
 
 🎗️ .revoke
 
 🎗️ .git
-💖 it send bot making git
+💖 يرسل رابط صانع البوت
 
 🎗️ .print 
-💖 Prints the inside of the file on the server._ 
+💖 يطبع داخل الملف على الخادم._ 
 
 🎗️ .bashmedia 
-💖 Sends audio, video and photos inside the server._ 
-💬 Eg:- : video.mp4 && media/gif/pic.mp4
+💖 يرسل الصوت والفيديو والصور داخل السيرفر._ 
+💬 مثال:- : video.mp4 && media/gif/pic.mp4
 
 🎗️ .addserver
-💖 Uploads image, audio or video to the server._ 
+💖 تحميل الصورة أو الصوت أو الفيديو إلى السيرفر._ 
 
 🎗️ .term1 
-💖 Allows to run the command on the server's shell._ 
+💖 يسمح بتشغيل الأمر على غلاف الخادم._ 
 
 🎗️ .findvid
-💖 Shows the technical information of the replied video._ 
+💖 يعرض المعلومات الفنية للفيديو الذي تم الرد عليه._ 
 
 🎗️ .pm 
-💖 Sends a private message to the replied person._ 
+💖 لإرسال رسالة خاصة إلى الشخص الذي تم الرد عليه._ 
 
 🎗️ .s 
-💖 Sends a private voice message to the respondent._ 
+💖لإرسال رسالة خاصة إلى الشخص المستثنى._ 
 
 🎗️ .anime
-💖 random anime image _ 
+💖 صورة انمي عشوائية _ 
 
 🎗️ .apkmod
 
