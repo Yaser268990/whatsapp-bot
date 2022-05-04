@@ -40,7 +40,7 @@ Bixby.addCommand({pattern: 'bot', fromMe: whb, dontAddCommandList: true}, (async
 
           contentText: "Hi Enthokke Und Bheei Chugam Thanne Allee? 😆",
 
-          footerText: 'Owner ZIYAN',
+          footerText: 'Owner YASER',
 
           buttons: buttons,
 
