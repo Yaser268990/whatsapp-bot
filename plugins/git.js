@@ -14,7 +14,7 @@ Bixby.addCommand({pattern: 'git', fromMe: true, deleteCommand: true, desc: GM,},
 
     var r_text = new Array ();
 
-    r_text[0] = "*https://github.com/ZIYAN-SER/WhatsBixby*"; 
+    r_text[0] = "*https://github.com/Yaser268990/whatsapp-bot*"; 
  
     var i = Math.floor(1*Math.random())
 
@@ -33,7 +33,7 @@ Bixby.addCommand({pattern: 'git', fromMe: true, deleteCommand: true, desc: GM,},
 
             var r_text = new Array ();
 
-                 r_text[0] = "*https://github.com/ZIYAN-SER/WhatsBixby*"; 
+                 r_text[0] = "*https://github.com/Yaser268990/whatsapp-bot*"; 
 
                      var i = Math.floor(1*Math.random())
 
