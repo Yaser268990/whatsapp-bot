@@ -227,10 +227,10 @@ if (conf.LANG == 'TR') {
 }
 if (conf.LANG == 'EN') {
     fulleva_dsc = 'Turns on AI powered chatbot on to your account!'
-    already_on = 'WhatsBixby chatbot is already on.'
-    already_off = 'WhatsBixby chatbot is currently turned off!.'
-    succ_on = 'WhatsBixby chatbot on! Restarting to make chatbot ✅'
-    succ_off = 'WhatsBixby chatbot off Restarting to make normal❤️'
+    already_on = 'bot chatbot is already on.'
+    already_off = 'Bot chatbot is currently turned off!.'
+    succ_on = 'Bot chatbot on! Restarting to make chatbot ✅'
+    succ_off = 'Bot chatbot off Restarting to make normal❤️'
 }
 if (conf.LANG == 'ML') {
     fulleva_dsc = 'പൂർണ്ണമായും പ്രവർത്തനക്ഷമമായ WhatsBixby chatbot സജീവമാക്കുന്നു. നിങ്ങളുടെ അക്കൗണ്ട് ഒരു ചാറ്റ്ബോട്ടാക്കി മാറ്റുക!'
@@ -240,7 +240,7 @@ if (conf.LANG == 'ML') {
     succ_off = 'WhatsBixby സെമി-ഫങ്ഷണൽ ആയി സജ്ജമാക്കുക! കുറച്ച് കാത്തിരിക്കൂ! ☑️'
 }
 
-Bixby.addCommand({ pattern: 'bixby ?(.*)', desc: _dsc, fromMe: true,dontAddCommandList: true, usage: '.bixby on / off' }, (async (message, match) => {
+Bixby.addCommand({ pattern: 'bixby ?(.*)', desc: _dsc, fromMe: true,dontAddCommandList: true, usage: '.bot on / off' }, (async (message, match) => {
     var eva_status = `${conf.CHATBOT}`
     if (match[1] == 'on') {
         if (eva_status == 'true') {
