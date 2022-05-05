@@ -27,7 +27,7 @@ Bixby.addCommand({ pattern: 'b64en ?(.*)', fromMe: false, desc: b64, usage: usag
               result,
             } = response.data
 
-            const msg = `*CONNECTION STATUS ✔:* ${status}\n\n\n *ENCRYPTED TEXT:* ${result}`
+            const msg = `*حالة الإتصال ✔:* ${status}\n\n\n *ENCRYPTED TEXT:* ${result}`
             await message.client.sendMessage(message.jid, msg, MessageType.text)
            })
       },
