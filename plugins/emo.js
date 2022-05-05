@@ -14,7 +14,7 @@ const Config = require('../config');
 
 const des = "You Can Png From Any Emoji"
 
-const iii = "Only work with emoji\n emojiyil mathrame work aavukayullu😁"
+const iii = "العمل فقط مع الرموز التعبيرية \ n العمل فقط على الرموز التعبيرية😁"
 
 if (Config.WORKTYPE == 'private') {
 
