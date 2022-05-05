@@ -505,7 +505,7 @@ Bixby.addCommand({pattern: 'setvar ?(.*)', fromMe: true, dontAddCommandList: tru
         else {
             await message.client.sendMessage(
                 message.jid,
-                '_It looks like you are trying to change bot language to *English.*\n_Dont worry, I will set it for you._',
+                '_يبدو أنك تحاول تغيير لغة الروبوت إلى *English.*\n_لا تقلق, سوف أقوم بإعداده لك._',
                 MessageType.text
             );
             return await heroku.patch(baseURI + '/config-vars', {
@@ -532,7 +532,7 @@ Bixby.addCommand({pattern: 'setvar ?(.*)', fromMe: true, dontAddCommandList: tru
         else {
             await message.client.sendMessage(
                 message.jid,
-                '_It looks like you are trying to change bot language to *Azerbaijani.*\n_Dont worry, I will set it for you._',
+                '_Iيبدو أنك تحاول تغيير لغة الروبوت إلى *Azerbaijani.*\n_لا تقلق ، سأحدده لك._',
                 MessageType.text
             );
             return await heroku.patch(baseURI + '/config-vars', {
