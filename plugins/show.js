@@ -20,7 +20,7 @@ Asena.addCommand({ pattern: 'joox ?(.*)', fromMe: false, dontAddCommandList: tru
 
     if (!userName) return await message.sendMessage(errorMessage(Lang.NEED_WORDIGTV))
 
-    await message.sendMessage(infoMessage("Loading"))
+    await message.sendMessage(infoMessage("تحميل"))
 
     await axios
       .get(`https://gratisancok.herokuapp.com/api/joox/?kata=${userName}&apikey=ZailaniGans`)
@@ -80,9 +80,9 @@ Asena.addCommand({ pattern: 'twt ?(.*)', fromMe: false,  dontAddCommandList: tru
 
     const userName = match[1]
 
-    if (!userName) return await message.sendMessage(errorMessage("Give proper link!"))
 
     await message.sendMessage(infoMessage(Lang.LOADINGTV))
+    if (!userName) return await message.sendMessage(errorMessage("أعط الرابط المناسب!"))
 
     await axios
       .get(`https://api-anoncybfakeplayer.herokuapp.com/twdown?url=${userName}`)
