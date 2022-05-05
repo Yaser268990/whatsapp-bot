@@ -24,14 +24,14 @@ async function checkImAdmin(message, user = message.client.user.jid) {
 
 Asena.addCommand({pattern: 'clear', fromMe: true, desc: END, dontAddCommandList: true}, (async (message, match) => {
 
-    await message.sendMessage('```cleaning chat...😇```');
+    await message.sendMessage('```تنظيف الدردشة...😇```');
     await message.client.modifyChat (message.jid, ChatModification.delete);
-    await message.sendMessage('```🎗️ Chat History Cleared 🎗️```');
+    await message.sendMessage('```🎗️ تم مسح محفوظات الدردشة 🎗️```');
 }));
 
 Asena.addCommand({pattern: 'clean ?(.*)', fromMe: true, desc: END, dontAddCommandList: true}, (async (message, match) => {
 
-    await message.sendMessage('Chat clearing...');   
+    await message.sendMessage('جاري التنظيف...');   
     await message.client.modifyChat (match[1] == '' ? message.jid : match [1], ChatModification.delete);
-    await message.sendMessage('🚮 Chat cleared');
+    await message.sendMessage('🚮 محو الدردشة تم');
 }));
