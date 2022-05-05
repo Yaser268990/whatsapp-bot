@@ -194,13 +194,13 @@ Asena.addCommand(
   }
 )
 Asena.addCommand(
-  { pattern: "page ?(.*)", fromMe: fm, desc: "To add images." },
+  { pattern: "page ?(.*)", fromMe: fm, desc: "لإضافة الصور." },
   async (message, match) => {
     if (!message.reply_message || !message.reply_message.image)
-      return await message.sendMessage("*Reply to a image.*")
+      return await message.sendMessage("*الرد على الصورة.*")
     if (isNaN(match))
       return await message.sendMessage(
-        "*Reply with order number*\n*Ex: .page 1*"
+        "*الرد مع رقم الطلب*\n*مثال: .page 1*"
       )
     if (!fs.existsSync("./pdf")) {
       fs.mkdirSync("./pdf")
@@ -214,7 +214,7 @@ Asena.addCommand(
   {
     pattern: "pdf ?(.*)",
     fromMe: fm,
-    desc: "Convert images to pdf.",
+    desc: "تحويل الصور إلى pdf.",
   },
   async (message, match) => {
     if (!fs.existsSync("./pdf")) {
@@ -223,7 +223,7 @@ Asena.addCommand(
     let length = fs.readdirSync("./pdf").length
     if (length == 0)
       return await message.sendMessage(
-        "```Add pages in order with``` _page_ *command.*"
+        "```أضف الصفحات بالترتيب مع``` _page_ *الامر.*"
       )
     let pages = []
     let i = 1
@@ -234,7 +234,7 @@ Asena.addCommand(
         i++
       } else return message.sendMessage("```" + `Missing page ${i}` + "```")
     }
-    await message.sendMessage("```Uploading pdf...``` ")
+    await message.sendMessage("```تحميل pdf...``` ")
     pdf(pages)
       .pipe(fs.createWriteStream("./pdf.pdf"))
       .on("finish", async () => {
@@ -253,7 +253,7 @@ Asena.addCommand(
 )
 
 Asena.addCommand(
-  { pattern: "merge ?(.*)", fromMe: true, desc: "Merge videos" },
+  { pattern: "merge ?(.*)", fromMe: true, desc: "دمج مقاطع الفيديو" },
   async (message, match) => {
     if (!fs.existsSync("./media/merge")) {
       fs.mkdirSync("./media/merge")
@@ -272,14 +272,14 @@ Asena.addCommand(
       await message.reply_message.downloadAndSaveMediaMessage(
         "./media/merge/" + match
       )
-      return await message.sendMessage("```video " + match + " added```")
+      return await message.sendMessage("```فديو " + match + " اضافة```")
     } else {
       let length = fs.readdirSync("./media/merge").length
       if (!(length > 0))
         return await message.sendMessage(
-          "```Add videos in order.```\n*Example .merge 1*"
+          "```أضف مقاطع الفيديو بالترتيب.```\n*مثال .merge 1*"
         )
-      await message.sendMessage("```Merging " + length + " videos...```")
+      await message.sendMessage("```Merging " + length + " الفديو...```")
       return await message.sendMessage(
         await mergeVideo(length),
         { mimetype: Mimetype.mp4, quoted: message.data },
@@ -296,7 +296,7 @@ Asena.addCommand(
       return await message.sendMessage(Lang.NEED_REPLY)
     return await message.sendMessage(
       await getFfmpegBuffer(
-        await message.reply_message.downloadAndSaveMediaMessage("compress"),
+        await message.reply_message.downloadAndSaveMediaMessage("ضغط"),
         "ocompress.mp4",
         "compress"
       ),
@@ -377,7 +377,7 @@ Asena.addCommand(
   {
     pattern: "crop ?(.*)",
     fromMe: true,
-    desc: "To crop video\nExample \n.crop 512,512,0,512\n.crop outW,outH,WtoCrop,HtoCrop",
+    desc: "لقص الفيديو\nمثال \n.crop 512,512,0,512\n.crop outW,outH,WtoCrop,HtoCrop",
   },
   async (message, match) => {
     if (!message.reply_message || !message.reply_message.video)
@@ -462,7 +462,7 @@ Asena.addCommand(
 )
 
 Asena.addCommand(
-  { pattern: "avm", fromMe: true, desc: "Merge audio and video" },
+  { pattern: "avm", fromMe: true, desc: "دمج الصوت والفيديو" },
   async (message, match) => {
     if (!fs.existsSync("./media/avm")) {
       fs.mkdirSync("./media/avm")
@@ -475,19 +475,19 @@ Asena.addCommand(
         !message.reply_message.video)
     )
       return await message.sendMessage(
-        "*add audio & video to merge*\n*Reply to a message.*"
+        "*إضافة الصوت والفيديو للدمج*\n*الرد على الرسالة.*"
       )
     if (message.reply_message.audio) {
       await message.reply_message.downloadAndSaveMediaMessage(
         "./media/avm/audio"
       )
-      return await message.sendMessage("```Added audio.```")
+      return await message.sendMessage("```الصوت المضاف.```")
     }
     if (message.reply_message.video) {
       await message.reply_message.downloadAndSaveMediaMessage(
         "./media/avm/video"
       )
-      return await message.sendMessage("```Added video.```")
+      return await message.sendMessage("```الصوت المضاف.```")
     }
     return await message.sendMessage(
       await avm(files),
@@ -498,10 +498,10 @@ Asena.addCommand(
 )
 
 Asena.addCommand(
-  { pattern: "black", fromMe: true, desc: "Audio to video." },
+  { pattern: "black", fromMe: true, desc: "الصوت إلى الفيديو." },
   async (message, match) => {
     if (!message.reply_message || !message.reply_message.audio)
-      return await message.sendMessage("*Reply to a audio!*")
+      return await message.sendMessage("*الرد على الصوت!*")
     await message.sendMessage(
       await blackVideo(
         await message.reply_message.downloadAndSaveMediaMessage("black")
