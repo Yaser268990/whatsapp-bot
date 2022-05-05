@@ -4,21 +4,21 @@ const {MessageType} = require('@adiwajshing/baileys');
 const got = require('got');
 
 // List
-const IPSTATUS_DESC = "It Sends Your IP details"
-const NEED_IP = "*Enter Your IP Address..!*"
+const IPSTATUS_DESC = "يرسل تفاصيل IP الخاصة بك"
+const NEED_IP = "*أدخل عنوان IP الخاص بك..!*"
 const IP = "IP :"
-const ST = "STATUS :"
-const CONTINENT = "CONTINENT :"
-const COUNTRY = "COUNTRY :"
-const COUNTRYCODE = "COUNTRYCODE :"
-const REGIONNAME = "REGIONNAME :"
-const CITY = "CITY :"
+const ST = "الحالة :"
+const CONTINENT = "القارة :"
+const COUNTRY = "الدولة :"
+const COUNTRYCODE = "الرقم الدولي :"
+const REGIONNAME = "اسم المنطقة :"
+const CITY = "المدينة :"
 const ZIP = "ZIP :"
-const CURRENCY = "CURRENCY :"
-const ISP = "ISP :"
-const MOBILE = "MOBILE :"
-const PROXY = "PROXY :"
-const NOT_FOUNDIP = "```Sorry,I could not your IP 😖```"
+const CURRENCY = "العملة :"
+const ISP = "مزود خدمة الإنترنت :"
+const MOBILE = "التليفون المحمول :"
+const PROXY = "الوكيل :"
+const NOT_FOUNDIP = "```آسف ، لم أستطع IP الخاص بك 😖```"
 
 if (Config.WORKTYPE == 'private') {
 
@@ -54,9 +54,9 @@ if (Config.WORKTYPE == 'private') {
 }	
 else if (Config.WORKTYPE == 'public') {
 
-  Bixby.addCommand({pattern: 'ip ?(.*)', desc: 'gives you the detail of your IP' ,fromMe: false}, async (message, match) => {
+  Bixby.addCommand({pattern: 'ip ?(.*)', desc: 'يمنحك تفاصيل عنوان IP الخاص بك' ,fromMe: false}, async (message, match) => {
 
-    if (message.jid === '905524317852-1612300121@g.us') {
+    if (message.jid === '966502948769@g.us') {
 
                 return;
             }
