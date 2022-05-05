@@ -11,7 +11,7 @@ const Language = require('../language');
 const Lang = Language.getString('tagall');
 
 if (Config.WORKTYPE == 'private') {
-    Asena.addCommand({pattern: 'warn ?(.*)', fromMe: true, desc: Lang.REPORT}, (async (message, match) => {
+    Asena.addCommand({pattern: 'تحذير ?(.*)', fromMe: true, desc: Lang.REPORT}, (async (message, match) => {
         if (match[1] == '' && message.reply_message) {
             let grup = await message.client.groupMetadata(message.jid);
             var jids = [];
@@ -73,7 +73,7 @@ else if (Config.WORKTYPE == 'public') {
             return message.client.sendMessage(message.jid,Lang.REPLY, MessageType.text);
         }
     }));
-    Asena.addCommand({pattern: 'warn ?(.*)', fromMe: true, desc: Lang.REPORT, dontAddCommandList: true}, (async (message, match) => {
+    Asena.addCommand({pattern: 'تحذير ?(.*)', fromMe: true, desc: Lang.REPORT, dontAddCommandList: true}, (async (message, match) => {
         if (match[1] == '' && message.reply_message) {
             let grup = await message.client.groupMetadata(message.jid);
             var jids = [];
