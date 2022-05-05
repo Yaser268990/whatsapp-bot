@@ -2,7 +2,8 @@ const Asena = require('../events');
 const { MessageType, MessageOptions, Mimetype } = require('@adiwajshing/baileys');
 const fs = require('fs');
 const axios = require('axios');
-const NEED_WORD = "*Must Enter some Words*"
+const NEED_WORD = "*يجب إدخال بعض الكلمات
+*"
 
 
 Asena.addCommand({ pattern: 'random ?(.*)', fromMe: false, desc: 'word image' }, (async (message, match) => {
@@ -28,6 +29,6 @@ Asena.addCommand({ pattern: 'random ?(.*)', fromMe: false, desc: 'word image' },
 
     var ttinullimage = await axios.get(`${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(ttinullimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption: '©Bixby Mowl' })
+    await message.client.sendMessage(message.jid,Buffer.from(ttinullimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption: '©YASER BOT' })
 
 }));
