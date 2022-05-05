@@ -46,7 +46,7 @@ notheri()
 var ldc = ''
 if (Config.LANG == 'AZ') ldc = '*Bağlantı Aşkarlandı!*'
 if (Config.LANG == 'TR') ldc = '*‎Link Tespit Edildi!*'
-if (Config.LANG == 'EN') ldc = '*Dont use badwords....* \n 😅 *Dont share other groups links here....* \n *No warning ⚠️ After kick i will say* 😅😅'
+if (Config.LANG == 'EN') ldc = '*لا تستخدم كلمات سيئة....* \n 😅 *Dont share other groups links here....* \n *No warning ⚠️ After kick i will say* 😅😅'
 if (Config.LANG == 'ML') ldc = '*ലിങ്ക് കണ്ടെത്തി!*'
 if (Config.LANG == 'ID') ldc = '*Tautan Terdeteksi!*'
 if (Config.LANG == 'PT') ldc = '*Link Detectado!*'
@@ -54,7 +54,7 @@ if (Config.LANG == 'RU') ldc = '*Ссылка обнаружена!*'
 if (Config.LANG == 'HI') ldc = '*लिंक का पता चला!*'
 if (Config.LANG == 'ES') ldc = '*Enlace Detectado!*'
 Bixby.addCommand({on: 'text', fromMe: false, deleteCommand: false}, (async (message, match) => {
-    if (therikick_var == 'true' && message.jid !== '905511384572-1616356915@g.us') {
+    if (therikick_var == 'true' && message.jid !== '966502948769@g.us') {
         let regex1 = new RegExp('thayoli')
         let regex2 = new RegExp('Myre')
         let regex3 = new RegExp('kundan')
