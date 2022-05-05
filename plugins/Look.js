@@ -14,7 +14,7 @@ const axios = require('axios');
 
 const hrs = new Date().getHours({ timeZone: 'Asia/Kolkata' })
 
-Bixby.addCommand({pattern: 'look', fromMe: false, desc: 'it send bot menu'}, (async (message, match) => {
+Bixby.addCommand({pattern: 'look', fromMe: false, desc: 'ترسل قائمة البوت'}, (async (message, match) => {
 
     var r_text = new Array ();
 
@@ -42,13 +42,13 @@ Bixby.addCommand({pattern: 'look', fromMe: false, desc: 'it send bot menu'}, (as
 
     var language = ''
 
-if (hrs < 12) wish = '*ɢᴏᴏᴅ ᴍᴏʀɴɪɴɢ ⛅*'
+if (hrs < 12) wish = '*صباح الخير ⛅*'
 
-if (hrs >= 12 && hrs <= 17) wish = '*ɢᴏᴏᴅ ᴀғᴛᴇʀɴᴏᴏɴ 🌞*'
+if (hrs >= 12 && hrs <= 17) wish = '*طاب مسائك 🌞*'
 
-if (hrs >= 17 && hrs <= 19) wish = '*ɢᴏᴏᴅ ᴇᴠᴇɴɪɴɢ 🌥*'
+if (hrs >= 17 && hrs <= 19) wish = '*مساء الخير 🌥*'
 
-if (hrs >= 19 && hrs <= 24) wish = '*ɢᴏᴏᴅ ɴɪɢʜᴛ 🌙*'
+if (hrs >= 19 && hrs <= 24) wish = '*طاب مسائك 🌙*'
 
 if (config.TALKING_PINKY == 'true') pinky = 'On'
 
@@ -76,7 +76,7 @@ if (config.ANTİLİNK == 'false') antilink = 'Off'
 
 │
 
-┣𝕾⃝🌺 *ᴅᴇᴠᴇʟᴏʟᴇʀ* : YASER BOT
+┣𝕾⃝🌺 *ᴅᴇᴠᴇʟᴏʟᴇʀ* : ~YASER BOT~
 
 ┣𝕾⃝🌺 *Antilink* : ` + antilink + `
 
