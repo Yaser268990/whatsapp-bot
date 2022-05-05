@@ -16,7 +16,7 @@ if (Config.WORKTYPE == 'private') {
 
     var webimage = await axios.get(`https://api.lolhuman.xyz/api/random/bts?apikey=queenamdipublic`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '©BIXBY MOWL'})
+    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '©YASER'})
 
     }));
 
@@ -24,7 +24,7 @@ if (Config.WORKTYPE == 'private') {
 
     var webimage = await axios.get(`https://api.lolhuman.xyz/api/random/exo?apikey=queenamdipublic`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '©BIXBY MOWL'})
+    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '©YASER'})
 
     }));
 
@@ -32,7 +32,7 @@ if (Config.WORKTYPE == 'private') {
 
     var webimage = await axios.get(`https://api.lolhuman.xyz/api/random/blackpink?apikey=queenamdipublic`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '©BIXBY MOWL'})
+    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '©YASER'})
 
     }));
 }
@@ -42,7 +42,7 @@ else if (Config.WORKTYPE == 'public') {
 
     var webimage = await axios.get(`https://api.lolhuman.xyz/api/random/bts?apikey=queenamdipublic`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '©BIXBY MOWL'})
+    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '©YASER'})
 
     }));
 
@@ -50,7 +50,7 @@ else if (Config.WORKTYPE == 'public') {
 
     var webimage = await axios.get(`https://api.lolhuman.xyz/api/random/exo?apikey=queenamdipublic`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '©BIXBY MOWL'})
+    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '©YASER'})
 
     }));
 
@@ -58,7 +58,7 @@ else if (Config.WORKTYPE == 'public') {
 
     var webimage = await axios.get(`https://api.lolhuman.xyz/api/random/blackpink?apikey=queenamdipublic`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '©BIXBY MOWL'})
+    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '©YASER'})
 
     }));
 }
