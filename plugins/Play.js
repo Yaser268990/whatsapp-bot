@@ -14,15 +14,15 @@ const got = require('got');
 
 const Config = require('../config');
 
-const LOAD_ING = "*wait... Trying To Find*"
+const LOAD_ING = "*انتظر ... أحاول البحث*"
 
 const axios = require('axios')
 
 const Axios = require('axios')
 
-Bixby.addCommand({pattern: 'song ?(.*)', fromMe: false, desc: 'search your song' , dontAddCommandList: true }, async (message, match) => {
+Bixby.addCommand({pattern: 'song ?(.*)', fromMe: false, desc: 'ابحث في أغنيتك' , dontAddCommandList: true }, async (message, match) => {
 
-		await message.client.sendMessage(message.jid, '*Processing.....*' , MessageType.text, { quoted: message.data });
+		await message.client.sendMessage(message.jid, '*يعالج.....*' , MessageType.text, { quoted: message.data });
 
 	
 
@@ -38,7 +38,7 @@ Bixby.addCommand({pattern: 'song ?(.*)', fromMe: false, desc: 'search your song'
 
 	
 
-        if(!status) return await message.sendMessage('*NO RESULT FOUND*')
+        if(!status) return await message.sendMessage('*لم يتم العثور على نتائج*')
 
 	
 
