@@ -3,12 +3,12 @@ const Bixby = require('../events');
 const {MessageType} = require('@adiwajshing/baileys');
 const Config = require('../config'); // +
 let wk = Config.WORKTYPE == 'private' ? true : false // +
-const pd = "Chooses beautiful bios for your friends." // +
+const pd = "يختار السير الجميل لأصدقائك." // +
 
 Bixby.addCommand({pattern: 'bio$', fromMe: wk, desc: pd}, (async (message, match) => {
 
     const id = message.jid // +
-    if (!message.reply_message) return await message.client.sendMessage(id, '```You have to answer someone for me to choose a bio!```', MessageType.text); // +
+    if (!message.reply_message) return await message.client.sendMessage(id, '```عليك أن تجيب على شخص ما لي لاختيار السيرة الذاتية!```', MessageType.text); // +
     await message.client.sendMessage(id, '@' + message.reply_message.jid.split('@')[0] + ' ```I choose bio for User Named..``` ', MessageType.text, {
         quotedMessage: message.reply_message.data, contextInfo: {mentionedJid: [message.reply_message.jid.replace('c.us', 's.whatsapp.net')]} 
     });
