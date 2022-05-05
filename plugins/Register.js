@@ -12,11 +12,11 @@ let handler = async function (m, { text, usedPrefix }) {
   if (user.registered === true) throw `Anda sudah terdaftar\nMau daftar ulang? ${usedPrefix}unreg <SN|SERIAL NUMBER>`
   if (!Reg.test(text)) throw `Format salah\n*${usedPrefix}daftar nama.umur*`
   let [_, name, splitter, age] = text.match(Reg)
-  if (!name) throw 'Nama tidak boleh kosong (Alphanumeric)'
-  if (!age) throw 'Umur tidak boleh kosong (Angka)'
+  if (!name) throw 'لا يمكن أن يكون الاسم فارغًا (أبجدي رقمي)'
+  if (!age) throw 'لا يمكن أن يكون العمر فارغًا (Ankga)'
   age = parseInt(age)
-  if (age > 120) throw 'Umur terlalu tua 😂'
-  if (age < 5) throw 'Bayi bisa ngetik sesuai format bjir ._.'
+  if (age > 120) throw 'العمر كبير جدا 😂'
+  if (age < 5) throw 'يمكن للأطفال الكتابة وفقًا لصيغة bjir ._.'
   user.name = name.trim()
   user.age = age
   user.regTime = + new Date
@@ -25,8 +25,8 @@ let handler = async function (m, { text, usedPrefix }) {
   m.reply(`
 Daftar berhasil!
 ╭─「 Info 」
-│ Nama: ${name}
-│ Umur: ${age} tahun
+│ اسم: ${name}
+│ العمر: ${age} tahun
 │ SN: ${sn}
 ╰────
 `.trim())
