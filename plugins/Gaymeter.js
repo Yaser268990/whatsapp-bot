@@ -7,13 +7,13 @@ const fs = require('fs');
 
 // Descriptions
 const TRGAY = "Yanıtladığınız kişinin gay yüzdesini ölçer."
-const ENGAY = "Measures the percentage of gays you respond to."
+const ENGAY = "يقيس النسبة المئوية للمثليين الذين تستجيب لهم."
 const HIGAY = "आपके द्वारा प्रतिसाद देने वाले समलैंगिकों के प्रतिशत को मापता है"
 const AZGAY = "Yanıtladığınız kişinin gay yüzdesini ölçer."
 
 // Need Reply
 const TRREP = "```Herhangi Bir Mesajı Yanıtlaman Gerekiyor!```"
-const ENREP = "```You Need To Reply Any Message!```"
+const ENREP = "```تحتاج إلى الرد على أي رسالة!```"
 const HIREP = "```आपको किसी भी संदेश का जवाब देने की आवश्यकता है```"
 const AZREP = "```Herhangi Bir Mesajı Yanıtlaman Gerekiyor!```"
 
@@ -791,7 +791,7 @@ else {
 
             if (message.reply_message === false) return await message.client.sendMessage(message.jid, ENREP, MessageType.text);
 
-            await message.client.sendMessage(message.jid, '*Calculating* ' + '@' + message.reply_message.jid.split('@')[0] + '’s *Gay Meter.. 🏳️‍🌈*', MessageType.text, {
+            await message.client.sendMessage(message.jid, '*Calculating* ' + '@' + message.reply_message.jid.split('@')[0] + '’s *حساب النسبة المئوية للمثلي الجنس المسمّى.. 🏳️‍🌈*', MessageType.text, {
                 quotedMessage: message.reply_message.data, contextInfo: {mentionedJid: [message.reply_message.jid.replace('c.us', 's.whatsapp.net')]}
 
             });
@@ -907,7 +907,7 @@ else {
                 message.jid, 
                 fs.readFileSync("/root/Bixby/media/gif/giphy.mp4"),
                 MessageType.video, 
-                { mimetype: Mimetype.gif, caption: `*Gay Meter Calculated!* 🏳️‍🌈\n*Result:* ${fetch_text[i]}` }
+                { mimetype: Mimetype.gif, caption: `*عداد مثلي الجنس محسوب!* 🏳️‍🌈\n*Result:* ${fetch_text[i]}` }
             )
         }));
     }
@@ -1033,7 +1033,7 @@ else {
                 message.jid, 
                 fs.readFileSync("/root/Bixby/media/gif/giphy.mp4"),
                 MessageType.video, 
-                { mimetype: Mimetype.gif, caption: `*Gay Meter Calculated By YASER!* 🏳️‍🌈\n*Result:* ${fetch_text[i]}` }
+                { mimetype: Mimetype.gif, caption: `*عداد مثلي الجنس محسوب By BOT!* 🏳️‍🌈\n*Result:* ${fetch_text[i]}` }
             )
         }));
     }
