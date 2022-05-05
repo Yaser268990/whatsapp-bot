@@ -15,8 +15,8 @@ const Config = require('../config');
 
     Bixby.addCommand({pattern: 'sendi$', fromMe: true, desc: 'Download status from wa'}, (async (message, match) => {    
 
-        if (message.reply_message === false) return await message.client.sendMessage(message.jid,'reply to a status', MessageType.text);
-        var downloading = await message.client.sendMessage(message.jid,'*Downloading Image Status* \n\n ```If it is video status try cmd [.sndv]```',MessageType.text);
+        if (message.reply_message === false) return await message.client.sendMessage(message.jid,'الرد على الحالة', MessageType.text);
+        var downloading = await message.client.sendMessage(message.jid,'*Downloading Image Status* \n\n ```إذا كانت حالة الفيديو جرب cmd [.sndv]```',MessageType.text);
         var location = await message.client.downloadAndSaveMediaMessage({
             key: {
                 remoteJid: message.reply_message.jid,
@@ -44,10 +44,10 @@ const Config = require('../config');
     
     
     
-   Bixby.addCommand({pattern: 'sendv$', fromMe: true, desc: 'Download status from wa'}, (async (message, match) => {    
+   Bixby.addCommand({pattern: 'sendv$', fromMe: true, desc: 'تنزيل الحالة من الواتس اب'}, (async (message, match) => {    
 
-        if (message.reply_message === false) return await message.client.sendMessage(message.jid,'reply to a status', MessageType.text);
-        var downloading = await message.client.sendMessage(message.jid,'*Downloading Video Status* \n\n ```If it is image try cmd [.sndi]```',MessageType.text);
+        if (message.reply_message === false) return await message.client.sendMessage(message.jid,'الرد على الحالة', MessageType.text);
+        var downloading = await message.client.sendMessage(message.jid,'*Downloading Video Status* \n\n ```إذا كانت الصورة جرب cmd [.sndi]```',MessageType.text);
         var location = await message.client.downloadAndSaveMediaMessage({
             key: {
                 remoteJid: message.reply_message.jid,
