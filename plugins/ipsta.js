@@ -25,11 +25,11 @@ let baseURI = '/apps/' + config.HEROKU.APP_NAME;
         succ_off = 'Antilink Başarıyla Kapatıldı!'
     }
     if (config.LANG == 'EN') {
-        l_dsc = 'Activates the Antilink tool.'
-        alr_on = 'Antilink is already open!'
-        alr_off = 'Antilink is currently closed!'
-        succ_on = 'Antilink Opened Successfully!'
-        succ_off = 'Antilink Closed Successfully!'
+        l_dsc = 'ينشط أداة Antilink.'
+        alr_on = 'Antilink مفتوح بالفعل!'
+        alr_off = 'Antilink مغلق حاليًا!'
+        succ_on = 'تم فتح Antilink بنجاح!'
+        succ_off = ' Antilink مغلق !'
     }
     if (config.LANG == 'AZ') {
         l_dsc = 'Antilink alətini aktivləşdirir.'
