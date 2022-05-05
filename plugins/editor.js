@@ -11,7 +11,7 @@ Asena.addCommand(
     pattern: "skull",
     fromMe: fm,
     dontAddCommandList: true,
-    desc: "Skull Photo editor.",
+    desc: "محرر الصور الجمجمة.",
   },
   async (message, match) => {
     if (!message.reply_message || !message.reply_message.image)
@@ -30,7 +30,7 @@ Asena.addCommand(
     pattern: "sketch",
     fromMe: fm,
     dontAddCommandList: true,
-    desc: "Sketch Photo editor.",
+    desc: "محرر الصور Sketch Photo.",
   },
   async (message, match) => {
     if (!message.reply_message || !message.reply_message.image)
@@ -47,10 +47,10 @@ Asena.addCommand(
 
 Asena.addCommand(
   {
-    pattern: "pencil",
+    pattern: "قلم",
     fromMe: fm,
     dontAddCommandList: true,
-    desc: "pencil Photo editor.",
+    desc: "محرر الصور بالقلم الرصاص.",
   },
   async (message, match) => {
     if (!message.reply_message || !message.reply_message.image)
@@ -70,7 +70,7 @@ Asena.addCommand(
     pattern: "color",
     fromMe: fm,
     dontAddCommandList: true,
-    desc: "color Photo editor.",
+    desc: "محرر الصور الملونة.",
   },
   async (message, match) => {
     if (!message.reply_message || !message.reply_message.image)
@@ -90,7 +90,7 @@ Asena.addCommand(
     pattern: "kiss",
     fromMe: fm,
     dontAddCommandList: true,
-    desc: "kiss Photo editor.",
+    desc: "قبلة محرر الصور.",
   },
   async (message, match) => {
     if (!message.reply_message || !message.reply_message.image)
@@ -110,7 +110,7 @@ Asena.addCommand(
     pattern: "bokeh",
     fromMe: fm,
     dontAddCommandList: true,
-    desc: "bokeh Photo editor.",
+    desc: "محرر الصور خوخه.",
   },
   async (message, match) => {
     if (!message.reply_message || !message.reply_message.image)
@@ -130,7 +130,7 @@ Asena.addCommand(
     pattern: "wanted",
     fromMe: fm,
     dontAddCommandList: true,
-    desc: "Wanted Photo editor.",
+    desc: "مطلوب محرر صور.",
   },
   async (message, match) => {
     if (!message.reply_message || !message.reply_message.image)
@@ -150,7 +150,7 @@ Asena.addCommand(
     pattern: "look",
     fromMe: fm,
     dontAddCommandList: true,
-    desc: "Dramatic Look Photo editor.",
+    desc: "محرر الصور ذو المظهر الدرامي.",
   },
   async (message, match) => {
     if (!message.reply_message || !message.reply_message.image)
@@ -170,7 +170,7 @@ Asena.addCommand(
     pattern: "gandm",
     fromMe: fm,
     dontAddCommandList: true,
-    desc: "Dramatic Look Photo editor.",
+    desc: "محرر الصور ذو المظهر الدرامي.",
   },
   async (message, match) => {
     if (!message.reply_message || !message.reply_message.image)
@@ -190,7 +190,7 @@ Asena.addCommand(
     pattern: "dark",
     fromMe: fm,
     dontAddCommandList: true,
-    desc: "Dramatic Look Photo editor.",
+    desc: "محرر الصور ذو المظهر الدرامي.",
   },
   async (message, match) => {
     if (!message.reply_message || !message.reply_message.image)
@@ -210,7 +210,7 @@ Asena.addCommand(
     pattern: "makeup",
     fromMe: fm,
     dontAddCommandList: true,
-    desc: "Dramatic Look Photo editor.",
+    desc: "محرر الصور ذو المظهر الدرامي.",
   },
   async (message, match) => {
     if (!message.reply_message || !message.reply_message.image)
@@ -230,7 +230,7 @@ Asena.addCommand(
     pattern: "cartoon",
     fromMe: fm,
     dontAddCommandList: true,
-    desc: "Dramatic Look Photo editor.",
+    desc: "محرر الصور ذو المظهر الدرامي.",
   },
   async (message, match) => {
     if (!message.reply_message || !message.reply_message.image)
