@@ -173,7 +173,7 @@ Asena.addCommand(
 )
 
 Asena.addCommand(
-  { pattern: "apk ?(.*)", fromMe: true, desc: "Download apk from apkmirror" },
+  { pattern: "apk ?(.*)", fromMe: true, desc: "تحميل apk من apkmirror" },
   async (message, match) => {
     let { type, buffer, name } = await apkMirror(match)
     if (type == "list")
@@ -187,7 +187,7 @@ Asena.addCommand(
         { filename: name, mimetype: type, quoted: message.data },
         MessageType.document
       )
-    else return await message.sendMessage("*Not found!*")
+    else return await message.sendMessage("*لا يوجد!*")
   }
 )
 
@@ -195,18 +195,18 @@ Asena.addCommand(
   {
     pattern: "strs ?(.*)",
     fromMe: true,
-    desc: "Download stickers.",
+    desc: "تنزيل الملصقات.",
   },
   async (message, match) => {
     let url = isUrl(match)
     if (!url)
       return await message.sendMessage(
-        "```Give me sticker pack url\nExample``` https://getstickerpack.com/stickers/quby-pack-1"
+        "```أعطني عنوان url (لحزمة الملصقات (رابط\nمثال``` https://getstickerpack.com/stickers/quby-pack-1"
       )
     let stickers = await getSticker(url)
     if (!stickers) return await message.sendMessage("*Not found!*")
     await message.sendMessage(
-      "```" + `Downloading ${stickers.length} stickers` + "```"
+      "```" + `جارى التحميل ${stickers.length} stickers` + "```"
     )
     for (let data of stickers) {
       await message.sendMessage(
@@ -227,7 +227,7 @@ Asena.addCommand(
   async (message, match) => {
     if (match == "end") {
       await deleteTicTacToe()
-      return await message.sendMessage("*Game ended*")
+      return await message.sendMessage("*انتهت اللعبة*")
     }
     let isGame = await isGameActive()
     if (isGame.state)
@@ -244,7 +244,7 @@ Asena.addCommand(
         : parsedJid(match)[0]
     if (!opponent || opponent == message.data.participant)
       return await message.sendMessage(
-        "*Choose Opponent by reply to a message or mention*"
+        "*اختر الخصم بالرد على رسالة أو ذكر*"
       )
     let { msg, mentionedJid } = await ticTacToe(
       match,
@@ -260,7 +260,7 @@ Asena.addCommand(
   {
     pattern: "fancy ?(.*)",
     fromMe: true,
-    desc: "Creates fancy text from given text",
+    desc: "يقوم بإنشاء نص خيالي من نص معين",
   },
   async (message, match) => {
     if (message.reply_message.text) {
