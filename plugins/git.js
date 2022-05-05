@@ -2,9 +2,9 @@ const Bixby = require('../events');
 
 const {MessageType} = require('@adiwajshing/baileys');
 
-const GM = "it sends bot deploying link"
+const GM = "يرسل رابط نشر الروبوت"
 
-const GN = "it sends bot deploying link"
+const GN = "يرسل رابط نشر الروبوت"
 
 const Config = require('../config');
 
