@@ -17,13 +17,13 @@ const Config = require('../config');
 const KeyLol = ['UAkOKdct','tJgWUsGV', 'gZuwdayT', 'vw6q6fEr', 'S6bEnCiS', 'zekais', 'FMoh8lhs']
 const Lol = KeyLol[Math.floor(Math.random() * KeyLol.length)]
 
-const DESC_BOB = "Make text on sponge bob's board"
+const DESC_BOB = "اكتب نصًا على سبونج بوب"
 
-const DESC_RIP = "Please provide an image link for the effect to be applied (Apply death effect)"
+const DESC_RIP = "يرجى تقديم رابط صورة للتأثير المراد تطبيقه (تطبيق تأثير الموت)"
 
-const DESC_GURA = "Create gawr gura text"
+const DESC_GURA = "انشاء نص عملاق"
 
-const DESC_RAND = "Create random texts"
+const DESC_RAND = "إنشاء نصوص عشوائية"
 
 const Language = require('../language');
 const Lang = Language.getString('ttp');
@@ -67,7 +67,7 @@ var ttinullimageh = await axios.get(`https://hardianto-chan.herokuapp.com/api/ri
 await message.client.sendMessage(message.jid,Buffer.from(ttinullimageh.data), MessageType.image)
 }));
     
-Bixby.addCommand({pattern: 'slot ?(.*)', fromMe: true, desc: 'Mini game for you'}, (async (message, match) => { 
+Bixby.addCommand({pattern: 'slot ?(.*)', fromMe: true, desc: 'لعبة صغيرة لك'}, (async (message, match) => { 
         const sotoy = [
 		'💖 : 🖤 : 🤍',
 		'🖤 : 💙 : 💖',
@@ -77,7 +77,7 @@ Bixby.addCommand({pattern: 'slot ?(.*)', fromMe: true, desc: 'Mini game for you'
 		'💙 : 🖤 : 💖',
         '💖 : 💚 : 💙',		
 		'🤍 : 🖤 : 💙',
-		'🤍 : 🤍 : 🤍 Congratulation, you won! 👑',
+		'🤍 : 🤍 : 🤍 مبروك لكم فوز! 👑',
 		'💖 : 🖤 : 🖤',
 		'💙 : 💙 : 💜',
 		'❤️ : 🖤 : 💙',
@@ -86,9 +86,9 @@ Bixby.addCommand({pattern: 'slot ?(.*)', fromMe: true, desc: 'Mini game for you'
 		'💚 : 💚 : ❤️',
 		'💙 : 💙 : 💜',
 		'💙 : 🤍 : 💜',
-		'💙 : 💙 : 💙 Congratulation, you won! 👑',
-		'🖤 : 🖤 : 🖤 Congratulation, you won! 👑',
-		'❤️ : ❤️ : ❤️ Congratulation, you won! 👑'
+		'💙 : 💙 : 💙 مبروك لكم فوز! 👑',
+		'🖤 : 🖤 : 🖤 مبروك لكم فوز! 👑',
+		'❤️ : ❤️ : ❤️ مبروك لكم فوز! 👑'
 		]   
 const somtoy = sotoy[Math.floor(Math.random() * (sotoy.length))]
 await message.sendMessage(`[  🎰 | SLOTS ]\n-----------------\n💚 : ❤️ : 💝\n${somtoy}\n💚 : ❤️ : 💝\n[  🎰 | SLOTS ]`);
@@ -136,7 +136,7 @@ var ttinullimageh = await axios.get(`https://zekais-api.herokuapp.com/sbburn?tex
 await message.client.sendMessage(message.jid,Buffer.from(ttinullimageh.data), MessageType.image)
 }));
     
-    Bixby.addCommand({pattern: 'slot ?(.*)', fromMe: false, desc: 'Mini game for you'}, (async (message, match) => { 
+    Bixby.addCommand({pattern: 'slot ?(.*)', fromMe: false, desc: 'لعبة صغيرة لك'}, (async (message, match) => { 
         const sotoy = [
 		'💖 : 🖤 : 🤍',
 		'🖤 : 💙 : 💖',
@@ -146,7 +146,7 @@ await message.client.sendMessage(message.jid,Buffer.from(ttinullimageh.data), Me
 		'💙 : 🖤 : 💖',
         '💖 : 💚 : 💙',		
 		'🤍 : 🖤 : 💚',
-		'🤍 : 🤍 : 🤍 Congratulation, you won! 👑',
+		'🤍 : 🤍 : 🤍 مبروك لكم فوز! 👑',
 		'💖 : 🖤 : 🖤',
 		'💙 : 💙 : 💜',
 		'❤️ : 🖤 : 💙',
@@ -155,9 +155,9 @@ await message.client.sendMessage(message.jid,Buffer.from(ttinullimageh.data), Me
 		'💚 : 💚 : ❤️',
 		'💙 : 💙 : 💜',
 		'💙 : 🤍 : 💜',
-		'💙 : 💙 : 💙 Congratulation, you won! 👑',
-		'🖤 : 🖤 : 🖤 Congratulation, you won! 👑',
-		'❤️ : ❤️ : ❤️ Congratulation, you won! 👑'
+		'💙 : 💙 : 💙 مبروك لكم فوز! 👑',
+		'🖤 : 🖤 : 🖤 مبروك لكم فوز! 👑',
+		'❤️ : ❤️ : ❤️ مبروك لكم فوز! 👑'
 		]   
 const somtoy = sotoy[Math.floor(Math.random() * (sotoy.length))]
 await message.sendMessage(`[  🎰 | SLOTS ]\n-----------------\n💚 : ❤️ : 💝\n${somtoy}\n💚 : ❤️ : 💝\n[  🎰 | SLOTS ]`);
