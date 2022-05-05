@@ -218,8 +218,8 @@ WhatsBixby.addCommand({pattern: 'mute ?(.*)', fromMe: true, desc: Lang.MUTE_DESC
 	var im = await checkImAdmin(message);
     if (!im) return await message.client.sendMessage(message.jid,Lang.IM_NOT_ADMIN,MessageType.text);
     var mutemin = mutemin
-	var mutehr = '_Group closed for ' + match[1].replace('h','') + ' minutes!_'
-	var muteday = '_Group closed for ' + match[1].replace('d','') + ' days!_'
+	var mutehr = '_المجموعة مغلقة من أجل ' + match[1].replace('h','') + ' minutes!_'
+	var muteday = '_المجموعة مغلقة من أجل ' + match[1].replace('d','') + ' days!_'
 		
     if (!match[1]) {
             await message.client.groupSettingChange(message.jid, GroupSettingChange.messageSend, true);
@@ -919,12 +919,12 @@ WhatsBixby.addCommand({pattern: 'invite ?(.*)', fromMe: true, desc: Lang.INVITE_
     await message.client.sendMessage(message.jid,Lang.INVITE + ' https://chat.whatsapp.com/' + invite, MessageType.text);
 }}));
 
-WhatsBixby.addCommand({pattern: 'revoke', fromMe: true, desc: "Revokes/resets group's invite link"}, (async (message, match) => {    
+WhatsBixby.addCommand({pattern: 'revoke', fromMe: true, desc: "إبطال / إعادة تعيين رابط دعوة المجموعة"}, (async (message, match) => {    
     if (message.jid.endsWith('@g.us')) {
 	var im = await checkImAdmin(message);
-    if (!im) return await message.client.sendMessage(message.jid, "_Promote bot as an *Admin* to use super commands_", MessageType.text);
+    if (!im) return await message.client.sendMessage(message.jid, "_قم بترقية البوت كمسؤول لاستخدام الأوامر الفائقة_", MessageType.text);
     await message.client.revokeInvite(message.jid)
-    await message.client.sendMessage(message.jid, "_*Group link* reset successfully!_", MessageType.text);
+    await message.client.sendMessage(message.jid, "_* رابط المجموعة * تم إعادة تعيينه بنجاح!_", MessageType.text);
 	}}))
 
 module.exports = {
