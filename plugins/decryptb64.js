@@ -8,11 +8,11 @@ const Bixby = require('../events');
 const {MessageType} = require('@adiwajshing/baileys');
 const axios = require('axios');
 const Config = require('../config');
-const b64 = "decrypt the encrypted text using base64"
+const b64 = "فك تشفير النص باستخدام base64"
 
-const usage = ".b64de <text>"
+const usage = ".b64de <النص>"
 
-const encypt = "```Enter the encrypted text which you need to decrypt!```"
+const encypt = "```أدخل النص المشفر الذي تريد فك تشفيره!```"
 
 Bixby.addCommand({ pattern: 'b64de ?(.*)', fromMe: false, desc: b64, usage: usage }, async (message, match) => {
 
@@ -28,7 +28,7 @@ Bixby.addCommand({ pattern: 'b64de ?(.*)', fromMe: false, desc: b64, usage: usag
               result,
             } = response.data
 
-            const msg = `*CONNECTION STATUS ✔:* ${status}\n\n\n *DECRYPTED TEXT:* ${result}`
+            const msg = `*حالة الإتصال ✔:* ${status}\n\n\n *نص منحرف:* ${result}`
             await message.client.sendMessage(message.jid, msg, MessageType.text)
            })
       },
