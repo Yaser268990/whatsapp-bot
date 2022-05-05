@@ -842,7 +842,7 @@ r_text[200] = "https://i.ibb.co/qjySbDs/rashmika-mandanna-20200304-0051.jpg";
 
     var respoimage = await axios.get(`${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.sendMessage(Buffer(respoimage.data), MessageType.image, {mimetype: Mimetype.png, caption: 'Made By Bixby Mowl'})
+    await message.sendMessage(Buffer(respoimage.data), MessageType.image, {mimetype: Mimetype.png, caption: 'Made By YASER BOT'})
 
     }));
 
