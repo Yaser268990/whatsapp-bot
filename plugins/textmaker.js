@@ -21,7 +21,7 @@ var ddd = ggg.toString('utf-8')
 clh.pay = ddd
 var desc_msg = ''
 if (Config.LANG == 'TR') desc_msg = 'Sınırsız erişime sahip textmaker araçlarını gösterir.'
-if (Config.LANG == 'EN') desc_msg = 'Shows text to image tools with unlimited access.'
+if (Config.LANG == 'EN') desc_msg = 'يعرض أدوات النص إلى الصور مع وصول غير محدود.'
 if (Config.LANG == 'RU') desc_msg = 'Показывает инструменты для создания текстов с неограниченным доступом.'
 if (Config.LANG == 'AZ') desc_msg = 'Sınırsız girişi olan textmaker alətləri göstərir.'
 if (Config.LANG == 'PT') desc_msg = 'Mostra ferramentas textmaker com acesso ilimitado.'
@@ -130,9 +130,9 @@ Asena.addCommand({pattern: 'txtit$', fromMe: wk, desc: desc_msg}, (async (messag
         command_cmd = '🔖 *Komut:* '
         desc_cmd = '♦️*Açıklama:* _'
     } else { 
-        usage_cmd = '🐼 Example : *'
-        command_cmd = '🍀 Command : '
-        desc_cmd = '🌈 Description : '
+        usage_cmd = '🐼 مثال : *'
+        command_cmd = '🍀 الامر : '
+        desc_cmd = '🌈 وصف : '
     }
     const msg = command_cmd + '```.devil``` \n' + t1 + '_\n' + usage_cmd + '.textdevil BOT*\n\n' +
         command_cmd + '```.bear``` \n' + desc_cmd + t2 + '_\n' + usage_cmd + '.textbear BOT*\n\n' +
