@@ -11,7 +11,7 @@ const Config = require('../config');
 const b64 = "Text encryption using base64."
 const usage = ".b64en <text>"
 
-const encypt = "```Enter the text which you need to encrypt!```"
+const encypt = "```أدخل النص الذي تريد تشفيره!```"
 
 Bixby.addCommand({ pattern: 'b64en ?(.*)', fromMe: false, desc: b64, usage: usage }, async (message, match) => {
 
