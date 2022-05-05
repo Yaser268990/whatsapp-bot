@@ -56,7 +56,7 @@ function webp2mp4File(path) {
                 const result = 'https:' + $('div#output > p.outfile > video > source').attr('src')
                 resolve({
                     status: true,
-                    message: "Made by WhatsAsena",
+                    message: "Made by YASER",
                     result: result
                 })
             }).catch(reject)
@@ -199,10 +199,10 @@ else if (Config.WORKTYPE == 'public') {
     var afn = ''
     var usge = ''
      if (Config.LANG == 'EN') {
-        doc_desc = 'CONVERT TO DOCUMENT AND ADD GIVEN NAME'
-        plk = '```NAMING AND DOCIFYING```'
-        afn = '```PLEASE REPLY TO A AUDIO```'
-        usge = '```.doc Helena *replace helena with desired name*```'
+        doc_desc = 'تحويل إلى المستند وإضافة اسم معطى'
+        plk = '```التسمية والتوثيق```'
+        afn = '```يرجى الرد على الصوت```'
+        usge = '```.doc Helena *استبدل helena بالاسم المطلوب*```'
     }
     if (Config.LANG == 'ML') {
         doc_desc = 'ഡോക്യുമെന്റിലേക്ക് പരിവർത്തനം ചെയ്യുകയും നൽകിയപേര് ചേർക്കുകയും ചെയ്യുക'
