@@ -27,7 +27,7 @@ Daftar berhasil!
 ╭─「 Info 」
 │ اسم: ${name}
 │ العمر: ${age} tahun
-│ SN: ${sn}
+│ رقم سري: ${sn}
 ╰────
 `.trim())
 }
