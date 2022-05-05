@@ -76,7 +76,7 @@ Asena.addCommand(
             return await message.sendMessage(Lang.ADDED.format(user), {
               contextInfo: { mentionedJid: [user + "@s.whatsapp.net"] },
             })
-          else return await message.sendMessage("*Please Check Given number*")
+          else return await message.sendMessage("*يرجى التحقق من الرقم المعطى*")
         })
       })
     } else {
@@ -308,12 +308,12 @@ Asena.addCommand(
     pattern: "pdm ?(.*)",
     fromMe: true,
     onlyGroup: true,
-    desc: "disable or enabled Group promote demote info",
+    desc: "تعطيل أو تمكين معلومات ترقية المجموعة",
   },
   async (message, match) => {
     if (!match)
       return await message.sendMessage(
-        genButtons(["ON", "OFF"], "Enable Promote and Demote Message"),
+        genButtons(["ON", "OFF"], "تفعيل ترقية وخفض الرسالة"),
         {},
         MessageType.buttonsMessage
       )
