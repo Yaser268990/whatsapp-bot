@@ -14,7 +14,7 @@ https://github.com/RIPPER-SER/Bixby-Mowl
  const Config = require('../config');
 
           var mode = ''
-if (Config.BC == 'default') mode = 'Developer:Bixby Mowl'
+if (Config.BC == 'default') mode = 'Developer:Yaser bot'
 
 else mode = 'ғᴏʀᴡᴀʀᴅᴇᴅ ʙʏ ' + Config.BC
 
