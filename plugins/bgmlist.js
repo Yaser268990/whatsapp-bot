@@ -14,7 +14,7 @@ const config = require('../config');
 const Language = require('../language');
 const Lang = Language.getString('wallpaper');
 
-Bixby.addCommand({pattern: 'audio command', fromMe: false, desc: 'send all bgm commands'}, (async (message, match) => {
+Bixby.addCommand({pattern: 'أمر صوتي', fromMe: false, desc: 'إرسال جميع أوامر bgm'}, (async (message, match) => {
 
     var r_text = new Array ();
     
