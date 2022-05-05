@@ -65,12 +65,12 @@ if (config.LANG == 'TR') {
     dlang_input = 'İşlenen Metin:'
 }
 if (config.LANG == 'EN') {
-    dlang_dsc = 'Guess the language of the replied message.'
-    closer_res = 'Closest Result:'
-    dlang_lang = 'Language:'
-    dlang_similarity = 'Similarity:'
-    dlang_other = 'Other Languages'
-    dlang_input = 'Processed Text:'
+    dlang_dsc = 'خمن لغة الرسالة التي تم الرد عليها.'
+    closer_res = 'أقرب نتيجة:'
+    dlang_lang = 'اللغه:'
+    dlang_similarity = 'تشابه:'
+    dlang_other = 'لغات اخرى'
+    dlang_input = 'نص معالج:'
 }
 if (config.LANG == 'AZ') {
     dlang_dsc = 'Cavablanan mesajın dilini təxmin edin.'
@@ -160,11 +160,11 @@ if (config.WORKTYPE == 'private') {
         succ_off = 'Antilink Başarıyla Kapatıldı!'
     }
     if (config.LANG == 'EN') {
-        l_dsc = 'Activates the Antilink tool.'
-        alr_on = 'Antilink is already open!'
-        alr_off = 'Antilink is currently closed!'
-        succ_on = 'Antilink Opened Successfully!'
-        succ_off = 'Antilink Closed Successfully!'
+        l_dsc = 'ينشط اداة Antilink.'
+        alr_on = 'Antilink is مفتوح بالفعل!'
+        alr_off = 'Antilink مغلق حاليا!'
+        succ_on = 'Antilink تم الفتح بنجاح!'
+        succ_off = 'Antilink تم إغلاقه بنجاح!'
     }
     if (config.LANG == 'AZ') {
         l_dsc = 'Antilink alətini aktivləşdirir.'
@@ -257,11 +257,11 @@ if (config.WORKTYPE == 'private') {
         succ_off_bio = 'Autobio Başarıyla Kapatıldı!'
     }
     if (config.LANG == 'EN') {
-        auto_dsc = 'Add live clock to your bio!'
-        alr_on_bio = 'Autobio is already open!'
-        alr_off_bio = 'Autobio is currently closed!'
-        succ_on_bio = 'Autobio Opened Successfully!'
-        succ_off_bio = 'Autobio Closed Successfully!'
+        auto_dsc = 'أضف ساعة حية إلى سيرتك الذاتية!'
+        alr_on_bio = 'Autobio is مفتوح بالفعل!'
+        alr_off_bio = 'Autobio مغلق حاليا!'
+        succ_on_bio = 'Autobio تم الفتح بنجاح!'
+        succ_off_bio = 'Autobio تم إغلاقه بنجاح!'
     }
     if (config.LANG == 'AZ') {
         auto_dsc = 'Bio-ya canlı saat əlavə et!'
@@ -621,7 +621,7 @@ if (config.WORKTYPE == 'private') {
                 //const resp = await fetch("https://coronavirus-19-api.herokuapp.com/all").then(r => r.json());
                 const respo = await got("https://coronavirus-19-api.herokuapp.com/all").then(async ok => {
                     const resp = JSON.parse(ok.body);
-                    await message.reply(`🌍 *World-Wide Results:*\n🌐 *Total Cases:* ${resp.cases}\n☠️ *Total Deaths:* ${resp.deaths}\n⚕️ *Total Recovered:* ${resp.recovered}`);
+                    await message.reply(`🌍 *نتائج عالمية:*\n🌐 *إجمالي الحالات:* ${resp.cases}\n☠️ *Total Deaths:* ${resp.deaths}\n⚕️ *إجمالي المسترد:* ${resp.recovered}`);
  
                 });
 
