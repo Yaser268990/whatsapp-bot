@@ -10,17 +10,17 @@ const con = require('../config');
 
 // Descriptions
 const TRZAR = "Rastgele zar atar."
-const ENZAR = "Roll dice randomly."
+const ENZAR = "لفة النرد بشكل عشوائي."
 const HIZAR = "पासा के यादृच्छिक रोल"
 
 // Sentences
 const TRSEN = "🍀 ```Zar Atılıyor!``` 🎲"
-const ENSEN = "🍀 ```Rolling Dice!``` 🎲"
+const ENSEN = "🍀 ```حجر نرد مرمي!``` 🎲"
 const HISEN = "🍀 ```पासा फेंको!``` 🎲"
 
 // Results
 const TRSON = "```Zar Atıldı:``` "
-const ENSON = "```Dice Rolled:``` "
+const ENSON = "```توالت النرد:``` "
 const HISON = "```पासा लुढ़का:``` "
 
 // Plugin Start 
