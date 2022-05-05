@@ -17,13 +17,13 @@ let baseURI = '/apps/' + config.HEROKU.APP_NAME;
     var STICKER_off = ''
 
     if (config.LANG == 'EN') {
-        l_dsc = 'turn on and turn off bgm. -bot owner command'
-        Y_dsc = 'turn on and turn off bgm. -bot owner command'
-        BGM_on = 'bgm option turned on!'
-        BGM_off = 'bgm option turned off'
-        STICKER_on = 'STICKER option turned on!'
-        STICKER_off = 'STICKER option turned off'
-        P_dsc = 'turn on & off anti-badword To remove members when they use bad words'        
+        l_dsc = 'قم بتشغيل وإيقاف تشغيل bgm. - أمر مالك الروبوت'
+        Y_dsc = 'قم بتشغيل وإيقاف تشغيل bgm. - أمر مالك الروبوت'
+        BGM_on = 'تم تشغيل خيار bgm!'
+        BGM_off = 'تم إيقاف تشغيل خيار bgm'
+        STICKER_on = 'تم تشغيل خيار الملصق!'
+        STICKER_off = 'تم إيقاف خيار STICKER'
+        P_dsc = 'تشغيل وإيقاف تشغيل مكافحة الكلمات السيئة لإزالة الأعضاء عند استخدامهم للكلمات السيئة'        
     }
     if (config.LANG == 'ML') {
         l_dsc = 'bgm ഓണാക്കുക അല്ലെങ്കിൽ ഓഫ് ചെയ്യുക. -ബോട്ട് ഉടമ കമാൻഡ്'
@@ -80,7 +80,7 @@ let baseURI = '/apps/' + config.HEROKU.APP_NAME;
         await message.sendMessage("NEW SUDO UPDATED")
     }));
 
-    Bixby.addCommand({ pattern: 'caption ?(.*)', fromMe: true, desc: 'changes all captions', usage: '.caption *Made by Bixby Mowl*' }, (async (message, match) => {
+    Bixby.addCommand({ pattern: 'caption ?(.*)', fromMe: true, desc: 'changes all captions', usage: '.caption *Made by Yaser*' }, (async (message, match) => {
         if (match[1] == '') return await message.sendMessage('NEED cA CAPTION')
         await heroku.patch(baseURI + '/config-vars', {
             body: {
@@ -90,7 +90,7 @@ let baseURI = '/apps/' + config.HEROKU.APP_NAME;
         await message.sendMessage("NEW CAPTION UPDATED")
     }));
 
-    Bixby.addCommand({ pattern: 'number ?(.*)', fromMe: true, desc: 'change user number', usage: '.number *Made by ziyan*' }, (async (message, match) => {
+    Bixby.addCommand({ pattern: 'number ?(.*)', fromMe: true, desc: 'change user number', usage: '.number *Made by Yaser*' }, (async (message, match) => {
         if (match[1] == '') return await message.sendMessage('NEED A NUMBER 919895xxxx')
         await heroku.patch(baseURI + '/config-vars', {
             body: {
@@ -100,7 +100,7 @@ let baseURI = '/apps/' + config.HEROKU.APP_NAME;
         await message.sendMessage("NEW USER NUMBER UPDATED")
     }));
 
-    Bixby.addCommand({ pattern: 'deployer ?(.*)', fromMe: true, desc: 'change user name', usage: '.deployer *Made by Ziyan*' }, (async (message, match) => {
+    Bixby.addCommand({ pattern: 'deployer ?(.*)', fromMe: true, desc: 'change user name', usage: '.deployer *Made by Yaser*' }, (async (message, match) => {
         if (match[1] == '') return await message.sendMessage('NEED A NAME')
         await heroku.patch(baseURI + '/config-vars', {
             body: {
@@ -121,7 +121,7 @@ let baseURI = '/apps/' + config.HEROKU.APP_NAME;
     }));
 
 
-    Bixby.addCommand({ pattern: 'botname ?(.*)', fromMe: true, desc: 'change your bot name', usage: '.botname *name* ' }, (async (message, match) => {
+    Bixby.addCommand({ pattern: 'botname ?(.*)', fromMe: true, desc: 'change your bot name', usage: '.botname *bot* ' }, (async (message, match) => {
         if (match[1] == '') return await message.sendMessage('TYPE YOUR NEW BOT NAME')
         await heroku.patch(baseURI + '/config-vars', {
             body: {
