@@ -226,11 +226,11 @@ if (conf.LANG == 'TR') {
     succ_off = 'WhatsBixby, Yarı Fonksiyonel Olarak Ayarlandı! Lütfen Biraz Bekleyin! ☑️'
 }
 if (conf.LANG == 'EN') {
-    fulleva_dsc = 'Turns on AI powered chatbot on to your account!'
-    already_on = 'bot chatbot is already on.'
-    already_off = 'Bot chatbot is currently turned off!.'
-    succ_on = 'Bot chatbot on! Restarting to make chatbot ✅'
-    succ_off = 'Bot chatbot off Restarting to make normal❤️'
+    fulleva_dsc = 'يقوم بتشغيل روبوت الدردشة المدعوم بالذكاء الاصطناعي على حسابك!'
+    already_on = 'الروبوت chatbot قيد التشغيل بالفعل.'
+    already_off = 'روبوت الدردشة الآلي متوقف حاليا!.'
+    succ_on = 'بوت chatbot قيد التشغيل! إعادة تشغيل لجعل chatbot ✅'
+    succ_off = 'بوت chatbot متوقف إعادة التشغيل ليعود إلى الوضع الطبيعي❤️'
 }
 if (conf.LANG == 'ML') {
     fulleva_dsc = 'പൂർണ്ണമായും പ്രവർത്തനക്ഷമമായ WhatsBixby chatbot സജീവമാക്കുന്നു. നിങ്ങളുടെ അക്കൗണ്ട് ഒരു ചാറ്റ്ബോട്ടാക്കി മാറ്റുക!'
