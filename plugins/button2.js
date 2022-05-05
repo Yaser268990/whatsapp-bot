@@ -26,7 +26,7 @@ Bixby.addCommand({pattern: 'bot', fromMe: whb, dontAddCommandList: true}, (async
 
     const buttons = [
 
-        {buttonId: 'id1', buttonText: {displayText: 'I Am Fine 🥰  \n\n\nOk Boshh😌😂'}, type: 1},
+        {buttonId: 'id1', buttonText: {displayText: 'انا بخير 🥰  \n\n\nOk Boshh😌😂'}, type: 1},
 
         {buttonId: 'id2', buttonText: {displayText: 'Ooh Pettenn Onn Fear Aayi😐   \n\n\nFear Aavanda Ithokke Ente Oorooo Kalikal Allee🤭🌚'}, type: 1},
 
