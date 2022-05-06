@@ -19,11 +19,11 @@ async function updateChecker() {
 }
 
 Asena.addCommand(
-  { pattern: "update$", fromMe: true, desc: "Check Bot Update." },
+  { pattern: "update$", fromMe: true, desc: "تحقق من تحديث البوت." },
   async (message, match) => {
     let isupdate = await updateChecker()
     if (!isupdate) return await message.sendMessage("*Bot is up-to-date.*")
-    return await message.sendMessage("*New updates*\n\n" + isupdate)
+    return await message.sendMessage("*تحديثات جديدة*\n\n" + isupdate)
   }
 )
 
@@ -31,22 +31,22 @@ Asena.addCommand(
   {
     pattern: "update now$",
     fromMe: true,
-    desc: "To-Up-Date",
+    desc: "للتحديث",
     dontAddCommandList: true,
   },
   async (message, match) => {
     let isupdate = await updateChecker()
     if (!isupdate)
       return await message.sendMessage(
-        "*Bot is up-todate.*\n*Nothing to Update.*"
+        "*Bot is up-todate.*\n*لا شيء للتحديث.*"
       )
     if (Config.HEROKU.HEROKU) {
-      await message.reply("```Updating...```")
+      await message.reply("```التحديث...```")
       try {
         var app = await heroku.get("/apps/" + Config.HEROKU.APP_NAME)
       } catch {
         await message.sendMessage(
-          "*Invalid Heroku Details*\n*Update Heroku APP name and Heroku API key*"
+          "*تفاصيل Heroku غير صالحة * \ n * تحديث اسم Heroku APP ومفتاح Heroku API*"
         )
       }
       git.fetch("upstream", Config.BRANCH)
@@ -58,14 +58,14 @@ Asena.addCommand(
       try {
         await git.addRemote("heroku", git_url)
       } catch {
-        console.log("heroku remote ekli")
+        console.log("إرفاق جهاز التحكم عن بعد heroku")
       }
       await git.push("heroku", Config.BRANCH)
-      await message.sendMessage("*Updated*")
+      await message.sendMessage("*محدث*")
     } else {
       git.pull(async (err, update) => {
         if (update && update.summary.changes) {
-          await message.sendMessage("*Updated*")
+          await message.sendMessage("*محدث*")
           exec("npm install").stderr.pipe(process.stderr)
         } else if (err) return await message.sendMessage(err)
       })
