@@ -37,7 +37,7 @@ Asena.addCommand(
       return await message.reply(Lang.ERROR.format(e))
     }
     if (result === " " || result.length == 1) {
-      return await message.reply(Lang.ERROR.format(" Empty text"))
+      return await message.reply(Lang.ERROR.format("نص فارغ"))
     }
 
     return await message.reply(Lang.RESULT.format(dil[2], result))
