@@ -17,7 +17,7 @@ var RU_USER = ''
 var USA_USER = ''
 var OTHER = ''
 if (CON.LANG == 'TR') ADMİN_USER = '*Admin Sayısı:*', USER_USER = '*Üye Sayısı:*', TR_USER = '*Türk Üye Sayısı:*', Hİ_USER = '*Hint Üye Sayısı:*', AZ_USER = '*Azeri Üye Sayısı:*', SRİ_USER = '*Sri Lanka Üye Sayısı:*', RU_USER = '*Rus Üye Sayısı:*', USA_USER = '*ABD Üye Sayısı:*', OTHER = '*Diğer Üye Sayısı:*'
-if (CON.LANG == 'EN') ADMİN_USER = '*عدد المشرفين:*', USER_USER = '*عدد الأعضاء:*', TR_USER = '*عدد الأعضاء التركية:*', Hİ_USER = '*عدد الأعضاء الهنود:*', AZ_USER = '*عدد أعضاء أذربيجان:*', SRİ_USER = '* عدد الأعضاء سيريلانكا:*', RU_USER = '*عدد الأعضاء الروسيين:*', USA_USER = '*عدد الأعضاءالامريكين:*', OTHER = '*عدد الأعضاء الآخرين:*'
+if (CON.LANG == 'EN') ADMİN_USER = '*عدد المشرفين:*', USER_USER = '*عدد الأعضاء:*', TR_USER = '*عدد الأعضاء التركية:*', Hİ_USER = '*عدد الأعضاء الهنود:*', AZ_USER = '*عدد أعضاءالسعوديين:*', SRİ_USER = '* عدد الأعضاء سيريلانكا:*', RU_USER = '*عدد الأعضاء الروسيين:*', USA_USER = '*عدد الأعضاءالامريكين:*', OTHER = '*عدد الأعضاء الآخرين:*'
 if (CON.LANG == 'AZ') ADMİN_USER = '*Admin sayı:*', USER_USER = '*Üzv sayı:*', TR_USER = '*Türk Üzv Sayısı:*', Hİ_USER = '*Hindistan üzv sayı:*', AZ_USER = '*Azərbaycan Üzv Sayısı:*', SRİ_USER = '*Şri Lanka üzv sayı:*', RU_USER = '*Rusiya Üzv Sayısı:*', USA_USER = '*ABD Üzv sayı:*', OTHER = '*Digər üzv sayı:*'
 if (CON.LANG == 'ES') ADMİN_USER = '*Recuento de administradores:*', USER_USER = '*Cuenta de miembro:*', TR_USER = '*Recuento de miembros turcos:*', Hİ_USER = '*Recuento de miembros indios:*', AZ_USER = '*Recuento de miembros de Azerbaiyán:*', SRİ_USER = '*Recuento de miembros de Sri Lanka:*', RU_USER = '*Recuento de miembros rusos:*', USA_USER = '*Recuento de miembros de USA:*', OTHER = '*Otro recuento de miembros:*'
 if (CON.LANG == 'PT') ADMİN_USER = '*Contagem de Admin:*', USER_USER = '*Contagem de membro:*', TR_USER = '*Contagem de membros turcos:*', Hİ_USER = '*Contagem de membros indianos:*', AZ_USER = '*Contagem de membros do Azerbaijão:*', SRİ_USER = '*Contagem de membros do Sri Lanka:*', RU_USER = '*Contagem de membros russos:*', USA_USER = '*Contagem de membros dos USA:*', OTHER = '*Contagem de outros membros:*'
@@ -122,7 +122,7 @@ else if (CON.WORKTYPE == 'public') {
             var other_user = [];
             region['participants'].map(async (reg) => {
                 if (reg.jid.startsWith('90')) { tr_user.push(reg.id.replace('c.us', 's.whatsapp.net'));
-                } if (reg.jid.startsWith('994')) { az_user.push(reg.id.replace('c.us', 's.whatsapp.net'));
+                } if (reg.jid.startsWith('966')) { az_user.push(reg.id.replace('c.us', 's.whatsapp.net'));
                 } if (reg.jid.startsWith('91')) { hi_user.push(reg.id.replace('c.us', 's.whatsapp.net'));
                 } if (reg.jid.startsWith('94')) { sri_user.push(reg.id.replace('c.us', 's.whatsapp.net'));
                 } if (reg.jid.startsWith('7')) { ru_user.push(reg.id.replace('c.us', 's.whatsapp.net'));
