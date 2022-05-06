@@ -388,8 +388,8 @@ Asena.addCommand({pattern: 'speedtest', fromMe: true, desc: Lang.SPEEDTEST_DESC}
     
     await message.client.sendMessage(
       message.jid,Lang.SPEEDTEST_RESULT + '\n\n' + 
-    '*ISP:* ```' + st.isp + '```\n' +
-    '*Ping:* ```' + st.ping.latency + 'ms```\n' +
+    '*مزود خدمة الإنترنت:* ```' + st.isp + '```\n' +
+    '*البنق:* ```' + st.ping.latency + 'ms```\n' +
     '*' + Lang.UPLOAD + ':* ```' + speedText(st.upload.bandwidth) + '```\n' +
     '*' + Lang.DOWNLOAD + ':* ```' + speedText(st.download.bandwidth) + '```\n',MessageType.text
     );
@@ -398,7 +398,7 @@ Asena.addCommand({pattern: 'speedtest', fromMe: true, desc: Lang.SPEEDTEST_DESC}
 
 Asena.addCommand({pattern: 'ping$', fromMe: true, deleteCommand: false, desc: Lang.PING_DESC}, (async (message, match) => {
   var start = new Date().getTime();
-  await message.sendMessage('```Ping!```');
+  await message.sendMessage('```البنق!```');
   var end = new Date().getTime();
 
   await message.client.sendMessage(
@@ -413,9 +413,9 @@ if (Config.WORKTYPE == 'private') {
 
         TinyURL.shorten(`${match[1]}`, async(res, err) => {
           if (err)
-            await message.client.sendMessage(message.jid, '*#### Error! ####*\n\n' + '```' + err + '```', MessageType.text);
+            await message.client.sendMessage(message.jid, '*#### خطأ! ####*\n\n' + '```' + err + '```', MessageType.text);
 
-            await message.client.sendMessage(message.jid,`*Original Link:* ${match[1]}\n*Short Link:* ` + res, MessageType.text)
+            await message.client.sendMessage(message.jid,`*الرابط الأصلي:* ${match[1]}\n*رابط قصير:* ` + res, MessageType.text)
         });
     }));
     Asena.addCommand({pattern: 'calc ?(.*)', fromMe: true, desc: Lang.CALC }, (async (message, match) => {
@@ -454,9 +454,9 @@ else if (Config.WORKTYPE == 'public') {
 
         TinyURL.shorten(`${match[1]}`, async(res, err) => {
           if (err)
-            await message.client.sendMessage(message.jid, '*#### Error! ####*\n\n' + '```' + err + '```', MessageType.text);
+            await message.client.sendMessage(message.jid, '*#### خطأ! ####*\n\n' + '```' + err + '```', MessageType.text);
 
-            await message.client.sendMessage(message.jid,`*Original Link:* ${match[1]}\n*Short Link:* ` + res, MessageType.text)
+            await message.client.sendMessage(message.jid,`*الرابط الأصلي:* ${match[1]}\n*رابط قصير:* ` + res, MessageType.text)
         });
     }));
     Asena.addCommand({pattern: 'calc ?(.*)', fromMe: false, desc: Lang.CALC }, (async (message, match) => {
