@@ -42,21 +42,21 @@ Asena.addCommand(
         quoted: message.data,
       })
     let msg = ""
-    msg += "```Title      : " + json.Title + "\n\n"
-    msg += "Year       : " + json.Year + "\n\n"
-    msg += "Rated      : " + json.Rated + "\n\n"
-    msg += "Released   : " + json.Released + "\n\n"
-    msg += "Runtime    : " + json.Runtime + "\n\n"
-    msg += "Genre      : " + json.Genre + "\n\n"
-    msg += "Director   : " + json.Director + "\n\n"
-    msg += "Writer     : " + json.Writer + "\n\n"
-    msg += "Actors     : " + json.Actors + "\n\n"
+    msg += "```عنوان      : " + json.Title + "\n\n"
+    msg += "السنة       : " + json.Year + "\n\n"
+    msg += "مصنفة      : " + json.Rated + "\n\n"
+    msg += "اعادة   : " + json.Released + "\n\n"
+    msg += "مدة العرض    : " + json.Runtime + "\n\n"
+    msg += "النوع      : " + json.Genre + "\n\n"
+    msg += "المخرج   : " + json.Director + "\n\n"
+    msg += "كاتب     : " + json.Writer + "\n\n"
+    msg += "ممثلين     : " + json.Actors + "\n\n"
     msg += "Plot       : " + json.Plot + "\n\n"
-    msg += "Language   : " + json.Language + "\n\n"
-    msg += "Country    : " + json.Country + "\n\n"
-    msg += "Awards     : " + json.Awards + "\n\n"
-    msg += "BoxOffice  : " + json.BoxOffice + "\n\n"
-    msg += "Production : " + json.Production + "\n\n"
+    msg += "اللغة   : " + json.Language + "\n\n"
+    msg += "الدولة    : " + json.Country + "\n\n"
+    msg += "الجوائز     : " + json.Awards + "\n\n"
+    msg += "شباك التذاكر  : " + json.BoxOffice + "\n\n"
+    msg += "إنتاج : " + json.Production + "\n\n"
     msg += "imdbRating : " + json.imdbRating + "\n\n"
     msg += "imdbVotes  : " + json.imdbVotes + "```"
     return await message.sendMessage(msg)
@@ -100,7 +100,7 @@ Asena.addCommand(
     )
       return await message.sendMessage(Lang.URL_NEED_REPLY)
     if (message.reply_message.video && message.reply_message.seconds > 60)
-      return await message.sendMessage("*Only accept below 1min*")
+      return await message.sendMessage("*تقبل فقط أقل من 1 دقيقة*")
     return await message.sendMessage(
       await UploadToImgur(
         await message.reply_message.downloadAndSaveMediaMessage("url")
