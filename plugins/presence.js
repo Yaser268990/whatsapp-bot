@@ -24,7 +24,7 @@ let baseURI = '/apps/' + config.HEROKU.APP_NAME;
 
     if (config.LANG == 'EN') {
 
-        PRE_dsc = 'You can set Bot Presence. -owner command'
+        PRE_dsc = 'يمكنك تعيين وجود الروبوت. -أمر المالك'
 
         PRE_online = '```ʙᴏᴛ ᴘʀᴇsᴇɴᴄᴇ ᴄʜᴀɴɢᴇᴅ ᴛᴏ ᴏɴʟɪɴᴇ```'
 
