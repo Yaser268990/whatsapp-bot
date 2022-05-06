@@ -13,7 +13,7 @@ const Lang = Language.getString("updown")
 const { emoji, getImgUrl, isUrl } = require("../Utilis/Misc")
 
 Asena.addCommand(
-  { pattern: "whois ?(.*)", fromMe: true, desc: "Show Group or person info." },
+  { pattern: "whois ?(.*)", fromMe: true, desc: "إظهار معلومات المجموعة أو الشخص." },
   async (message, match) => {
     const u = message.mention[0] || message.reply_message.jid
     if (message.isGroup && !u) {
