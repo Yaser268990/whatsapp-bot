@@ -7,7 +7,7 @@ const Config = require('../config')
 
 // Inbox Block System
 // This Plugins By ZIYAN
-const INBO = "Inbox Not Allowed"
+const INBO = "البريد الوارد غير مسموح به"
  if (Config.INBO == 'true') {
 Bixby.addCommand({on: 'text', fromMe: false, delownsewcmd: false, onlyPm: true }, (async (message, match) => {
         let regexb1ziyan = new RegExp('.')
