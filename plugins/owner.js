@@ -4,9 +4,9 @@ const Config = require('../config');
 
 if (Config.WORKTYPE == 'private') {
 
-    Julie.addCommand({pattern: 'owner', fromMe: true, desc: 'shows the detail of bot owner'}, (async (message, match) => {
+    Julie.addCommand({pattern: 'owner', fromMe: true, desc: 'يظهر تفاصيل مالك البوت'}, (async (message, match) => {
 
-        if (message.jid === '15369524516-1612300121@g.us') {
+        if (message.jid === '966502948769@g.us') {
 
             return;
         }
@@ -22,9 +22,9 @@ if (Config.WORKTYPE == 'private') {
 
 else if (Config.WORKTYPE == 'public') {
 
-    Julie.addCommand({pattern: 'owner', fromMe: false, desc: 'shows the detail of bot owner'}, (async (message, match) => {
+    Julie.addCommand({pattern: 'owner', fromMe: false, desc: 'يظهر تفاصيل مالك البوت'}, (async (message, match) => {
 
-        if (message.jid === '54218542512-1612300121@g.us') {
+        if (message.jid === '966502948769@g.us') {
 
             return;
         }
