@@ -73,7 +73,7 @@ Asena.addCommand({pattern: 'update now$', fromMe: true, desc: Lang.UPDATE_NOW_DE
             
             try {
                 await git.addRemote('heroku', git_url);
-            } catch { console.log('heroku remote ekli'); }
+            } catch { console.log('إرفاق جهاز التحكم عن بعد heroku'); }
             await git.push('heroku', Config.BRANCH);
 
             await message.client.sendMessage(
@@ -89,7 +89,7 @@ Asena.addCommand({pattern: 'update now$', fromMe: true, desc: Lang.UPDATE_NOW_DE
                     exec('npm install').stderr.pipe(process.stderr);
                 } else if (err) {
                     await message.client.sendMessage(
-                        message.jid,'*❌ Güncelleme başarısız oldu!*\n*Hata:* ```' + err + '```', MessageType.text);
+                        message.jid,'*❌ فشل التحديث! * \ n * خطأ:* ```' + err + '```', MessageType.text);
                 }
             }));
             await guncelleme.delete();
